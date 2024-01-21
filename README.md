@@ -1,13 +1,14 @@
 <div id="top"></div>
 
 <!-- HEADER -->
+
 <br />
 <div align="center">
-    <img src="Images/pokeylope.png" alt="Logo" width="80" height="80">
+    <img src="images/pokeylope.png" alt="Logo" width="80" height="80">
 
-  <h3 align="center">PsychoTracker</h3>
+<h3 align="center">PsychoTracker</h3>
 
-  <p align="center">
+<p align="center">
     Psychonauts Randomizer item tracker
     <br />
     <br />
@@ -15,17 +16,29 @@
 </div>
 
 <!-- ABOUT -->
+
 ## About
 
 ![](images/screenshot.png)
 
-Currently a work in progress. The goal with this project is to create an item tracker for use with the Psychonauts Randomizer: [PsychoRando](https://github.com/Akashortstack/PsychoRando)
+Currently a work in progress. The aim with this project is to create an item tracker for use with the Psychonauts Randomizer: [PsychoRando](https://github.com/Akashortstack/PsychoRando)
+
+## Project Goals
+
+* Drag and drop
+
+* Autotracking
+
+* Display Randomizer settings as icons
+
+* Implement Hint System
 
 ### Built With
 
 * [TBD]()
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 ### Prerequisites
@@ -37,11 +50,13 @@ Lorem Ipsum
 Lorem Ipsum
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Use this space to show useful examples of how a project can be used. 
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Any contributions you make are **greatly appreciated**.
