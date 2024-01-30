@@ -7,8 +7,6 @@
     </ControlTemplate>
 
     <!--World Icons-->
-	<Image x:Key="" Source="images\" x:Shared="False"/>
-	
 	<Image x:Key="WhisperingRockImage" Source="images\worlds\campgrounds.png" x:Shared="False"/>
 	<Image x:Key="ThorneyTowersImage" Source="images\worlds\asylum.png" x:Shared="False"/>
 	<Image x:Key="BasicBrainingImage" Source="images\worlds\coach.png" x:Shared="False"/>
@@ -23,7 +21,6 @@
 	<Image x:Key="MeatCircusImage" Source="images\worlds\kidcoach.png" x:Shared="False"/>
 
 	<!--Merit Badges-->
-
 	<Image x:Key="ClairvoyanceImage" Source="images\badges\Clairvoyance.png" x:Shared="False"/>
 	<Image x:Key="ConfusionImage" Source="images\badges\Confusion.png" x:Shared="False"/>
 	<Image x:Key="InvisibilityImage" Source="images\badges\Invisibility.png" x:Shared="False"/>
@@ -69,15 +66,102 @@
 	<Image x:Key="EagleclawImage" Source="images\checks\scavengerhunt\Eagleclaw.png" x:Shared="False"/>
 	<Image x:Key="EggImage" Source="images\checks\scavengerhunt\Egg.png" x:Shared="False"/>
 	<Image x:Key="FossilImage" Source="images\checks\scavengerhunt\Fossil.png" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	<Image x:Key="" Source="images\checks\scavengerhunt\" x:Shared="False"/>
-	
+    <Image x:Key="GlasseyeImage" Source="images\checks\scavengerhunt\Glasseye.png" x:Shared="False"/>
+    <Image x:Key="GolddoubbloonImage" Source="images\checks\scavengerhunt\Golddoubbloon.png" x:Shared="False"/>
+    <Image x:Key="IdolImage" Source="images\checks\scavengerhunt\Idol.png" x:Shared="False"/>
+    <Image x:Key="OldskullImage" Source="images\checks\scavengerhunt\Oldskull.png" x:Shared="False"/>
+    <Image x:Key="PipeImage" Source="images\checks\scavengerhunt\Pipe.png" x:Shared="False"/>
+    <Image x:Key="PiratescopeImage" Source="images\checks\scavengerhunt\Piratescope.png" x:Shared="False"/>
+    <Image x:Key="PsychocomicImage" Source="images\checks\scavengerhunt\Psychocomic.png" x:Shared="False"/>
+    <Image x:Key="SandwichImage" Source="images\checks\scavengerhunt\Sandwich.png" x:Shared="False"/>
+    <Image x:Key="VoodoodollImage" Source="images\checks\scavengerhunt\Voodoodoll.png" x:Shared="False"/>
+    <Image x:Key="WatchImage" Source="images\checks\scavengerhunt\Watch.png" x:Shared="False"/>
+    
+    <!--Keys-->
+    <!--i.e. unlocks a barrier in the phsyical or mental worlds-->
+    
+    <!--Physical World Locks-->
+    <Image x:Key="ButtonImage" Source="images\keys\Button.png" x:Shared="False"/>
+    <Image x:Key="CobwebDusterImage" Source="images\keys\cobweb-duster.png" x:Shared="False"/>
+    <Image x:Key="DowsingRodImage" Source="images\keys\dowsingrod.png" x:Shared="False"/>
+    <Image x:Key="PokeylopeCakeImage" Source="images\keys\pokeylopecake.png" x:Shared="False"/>
+    <Image x:Key="LungfishCallImage" Source="images\keys\seaurchinwhistle.png" x:Shared="False"/>
+    
+    <!--Sasha's Shooting Gallery-->
+    <!--Marksmanship Badge-->
+        
+    <!--Milla's Dance Party-->
+    <!--Levitation Badge-->
+    
+    <!--Brain Tumbler-->
+    <!--Levitation Badge-->       
+
+    <!--Gloria Locks-->
+    <Image x:Key="HagathaScriptImage" Source="images\keys\gloria\hagathascript.png" x:Shared="False"/>
+    <Image x:Key="KnightofJoyScriptImage" Source="images\keys\gloria\knightofjoyscript.png" x:Shared="False"/>
+    <Image x:Key="MailboatScriptImage" Source="images\keys\gloria\mailboatscript.png" x:Shared="False"/>
+    <Image x:Key="CandleImage" Source="images\keys\gloria\th_candle.png" x:Shared="False"/>
+    <Image x:Key="MegaphoneImage" Source="images\keys\gloria\th_megaphone.png" x:Shared="False"/>
+    <!--Pyrokinesis Badge-->
+
+    <!--Milkman Locks-->
+    <Image x:Key="CrowfeatherImage" Source="images\keys\milkman\crowfeather.png" x:Shared="False"/>
+    <Image x:Key="ClippersImage" Source="images\keys\milkman\mm_clippers.png" x:Shared="False"/>
+    <Image x:Key="FlowersImage" Source="images\keys\milkman\mm_flowers.png" x:Shared="False"/>
+    <Image x:Key="GirlScoutCraftImage" Source="images\keys\milkman\mm_godseye.png" x:Shared="False"/>
+    <Image x:Key="PilotHelmetImage" Source="images\keys\milkman\mm_helihelmet.png" x:Shared="False"/>
+    <Image x:Key="PhoneImage" Source="images\keys\milkman\mm_phone.png" x:Shared="False"/>
+    <Image x:Key="PlungerImage" Source="images\keys\milkman\mm_plunger.png" x:Shared="False"/>
+    <Image x:Key="RifleImage" Source="images\keys\milkman\mm_rifle.png" x:Shared="False"/>
+    <Image x:Key="RollingPinImage" Source="images\keys\milkman\mm_rollingpin.png" x:Shared="False"/>
+    <Image x:Key="SignImage" Source="images\keys\milkman\mm_sign.png" x:Shared="False"/>
+    <Image x:Key="WateringCanImage" Source="images\keys\milkman\mm_wateringcan.png" x:Shared="False"/>
+    <!--Clairvoyance Badge-->
+
+    <!--Black Velvetopia Locks-->
+    <Image x:Key="ArchwayPaintingImage" Source="images\keys\velvetopia\archwaypainting.png" x:Shared="False"/>
+    <Image x:Key="LadderPaintingImage" Source="images\keys\velvetopia\ladderpainting.png" x:Shared="False"/>
+    <Image x:Key="RoseImage" Source="images\keys\velvetopia\rose.png" x:Shared="False"/>
+    <Image x:Key="RosePaintingImage" Source="images\keys\velvetopia\rosepainting.png" x:Shared="False"/>
+    <Image x:Key="VinePaintingImage" Source="images\keys\velvetopia\vinepainting.png" x:Shared="False"/>
+    <Image x:Key="WindowPaintingImage" Source="images\keys\velvetopia\windowpainting.png" x:Shared="False"/>
+
+    <!--Waterloo Locks-->
+    <Image x:Key="FredsNoteImage" Source="images\keys\waterloo\ww_fredsnote.png" x:Shared="False"/>
+    <Image x:Key="GunImage" Source="images\keys\waterloo\ww_gun copy.png" x:Shared="False"/>
+    <Image x:Key="CoinImage" Source="images\keys\waterloo\ww_pricelesscoin.png" x:Shared="False"/>
+    <!--Telekinesis Badge-->
+    
+    
+    <!--Emotional Baggage Tags-->
+    <Image x:Key="DufflebagTagImage" Source="images\tags\dufflebagtag.png" x:Shared="False"/>
+    <Image x:Key="HatboxTagImage" Source="images\tags\hatboxtag.png" x:Shared="False"/>
+    <Image x:Key="PurseTagImage" Source="images\tags\pursetag.png" x:Shared="False"/>
+    <Image x:Key="SteamerTrunkTagImage" Source="images\tags\steamertrunktag.png" x:Shared="False"/>
+    <Image x:Key="SuitcaseTagImage" Source="images\tags\suitcasetag.png" x:Shared="False"/>
+    
+    <!--Victory Conditions-->
+    <Image x:Key="PsychonautBadgeImage" Source="images\victory-conditions\beatalllevels.png" x:Shared="False"/>
+    <Image x:Key="BrainTankImage" Source="images\victory-conditions\beatoleander.png" x:Shared="False"/>
+    <Image x:Key="BrainJarImage" Source="images\victory-conditions\brainhunt.png" x:Shared="False"/>
+    <Image x:Key="RankImage" Source="images\victory-conditions\rank101.png" x:Shared="False"/>
+    <Image x:Key="ScavengerHuntListImage" Source="images\victory-conditions\scavengerhunt.png" x:Shared="False"/>
+    
+    <!--Extra (unused?) checks-->
+    <Image x:Key="PokeylopeImage" Source="images\pokeylope.png" x:Shared="False"/>
+
+    <Image x:Key="BaconImage" Source="images\other\bacon.png" x:Shared="False"/>
+    <Image x:Key="BallColorizerImage" Source="images\other\ballcolorizer.png" x:Shared="False"/>
+    <Image x:Key="BirdDinnerImage" Source="images\other\birddinner.png" x:Shared="False"/>
+    <Image x:Key="MillaBrainPolaroidImage" Source="images\other\co_brainpolaroidmilla.png" x:Shared="False"/>
+    <Image x:Key="SashaBrainPolaroidImage" Source="images\other\co_brainpolaroidsasha.png" x:Shared="False"/>
+    <Image x:Key="DreamfluffImage" Source="images\other\dreamfluff.png" x:Shared="False"/>
+    <Image x:Key="FordCoreImage" Source="images\other\fordcore.png" x:Shared="False"/>
+    <Image x:Key="LilliBraceletImage" Source="images\other\lilibracelet.png" x:Shared="False"/>
+    <Image x:Key="MindDoorImage" Source="images\other\minddoor.png" x:Shared="False"/>
+    <Image x:Key="MentalArrowheadImage" Source="images\other\psiballarrowhead.png" x:Shared="False"/>
+    <Image x:Key="MentalHealthImage" Source="images\other\psiballhealth.png" x:Shared="False"/>
+    <Image x:Key="SmellingSaltsImage" Source="images\other\smellingsalts.png" x:Shared="False"/>
+    <Image x:Key="SquirrelDinnerImage" Source="images\other\squirreldinner.png" x:Shared="False"/>
+
 </ResourceDictionary>
