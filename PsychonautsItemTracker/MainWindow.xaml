@@ -64,7 +64,338 @@
                         </Button>
                     </Grid>
                 </Grid>
-            </Grid>   
+
+                <!--Basic Braining-->
+                <Grid x:Name="BasicBrainingGrid" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="BasicBrainingButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="BasicBrainingImage"/>
+                        </Button>
+                    </Grid>
+                </Grid>
+
+                <!--Sasha-->
+                <Grid x:Name="ShootingGalleryGrid" Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="ShootingGalleryButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="ShootingGalleryImage"/>
+                        </Button>
+                    </Grid>
+                </Grid>
+
+
+                <!--Milla-->
+                <Grid x:Name="DancePartyGrid" Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="DancePartyButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="DancePartyImage"/>
+                        </Button>
+                        
+                    </Grid>
+                </Grid>
+
+
+
+
+                <!--BrainTumbler-->
+                <Grid x:Name="BrainTumblerGrid" Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="BrainTumblerButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="BrainTumblerImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+
+                <!--Lungfishopolis-->
+                <Grid x:Name="LungfishopolisGrid" Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="LungfishopolisButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="LungfishopolisImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+
+
+  
+            </Grid>
+
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!--Thorney Towers Asylum-->
+                <Grid x:Name="AsylumGrid" Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="AsylumButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="ThorneyTowersImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+                <!--MilkMan-->
+                <Grid x:Name="MilkManGrid" Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="MilkManButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="MilkmanConspiracyImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+                <!--Gloria's Theater-->
+                <Grid x:Name="GloriaGrid" Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="GloriaButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="GloriasTheaterImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+                <!--Waterloo World-->
+                <Grid x:Name="FredGrid" Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="WaterlooButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="WaterlooWorldImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+
+
+
+                <!--Black Velvetopia-->
+                <Grid x:Name="EdgarGrid" Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="EdgarButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="BlackVelvetopiaImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+
+                <!--Meat Circus-->
+                <Grid x:Name="KidCoachGrid" Grid.Row="5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="KidCoachButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="MeatCircusImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
+
+
+
+            </Grid>
+
+            
+            
+     
         </Grid>
     </Grid>
 </Window>
