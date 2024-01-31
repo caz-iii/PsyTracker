@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:PsychonautsItemTracker"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="Dictionary.xaml" />
     </Application.Resources>
 </Application>

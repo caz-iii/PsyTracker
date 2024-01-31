@@ -11,12 +11,60 @@
         LocationChanged="Window_LocationChanged"
         SizeChanged="Window_SizeChanged"
         AllowDrop="True" Drop="DropFile"
-        Title="MainWindow" Height="440" Width="300">
+        Title="PsyTracker" Height="880" Width="570" Background="#303030" MinHeight="440" MinWidth="300">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="433*"/>
-            <ColumnDefinition Width="367*"/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Name="SecondRow" Height="0*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
 
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <!--Whispering Rock-->
+                <Grid x:Name="WhisperingRockGrid" Grid.Row="0" >
+                    <Grid.ColumnDefinitions>
+                        <!-- path width 2.2 -->
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <!-- path width 2 -->
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Name ="WhisperingRockButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="WhisperingRockImage"/>
+                        </Button>
+                    </Grid>
+                </Grid>
+            </Grid>   
+        </Grid>
     </Grid>
 </Window>
