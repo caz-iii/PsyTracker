@@ -388,6 +388,33 @@
                     </Grid>
                 </Grid>
 
+                <!--Ford/Rank ups-->
+                <Grid x:Name="FordGrid" Grid.Row="6">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1.5*"/>
+                        <ColumnDefinition Width="3.3*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="3.5*"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="2*"/>
+                            <ColumnDefinition Width=".1*"/>
+                            <ColumnDefinition Width=".3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button Name ="FordButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                            <DynamicResource ResourceKey="FordImage"/>
+                        </Button>
+
+                    </Grid>
+                </Grid>
+
 
 
 

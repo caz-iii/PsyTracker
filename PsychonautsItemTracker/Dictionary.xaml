@@ -19,6 +19,7 @@
 	<Image x:Key="WaterlooWorldImage" Source="images\worlds\fred.png" x:Shared="False"/>
 	<Image x:Key="BlackVelvetopiaImage" Source="images\worlds\edgar.png" x:Shared="False"/>
 	<Image x:Key="MeatCircusImage" Source="images\worlds\kidcoach.png" x:Shared="False"/>
+    <Image x:Key="FordImage" Source="images\worlds\ford.png" x:Shared="False"/>
 
 	<!--Merit Badges-->
 	<Image x:Key="ClairvoyanceImage" Source="images\badges\Clairvoyance.png" x:Shared="False"/>
