@@ -18,7 +18,9 @@
             <RowDefinition Height="0.3*"/>
             <RowDefinition Height="7*"/>
             <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.9*"/>
             <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.9*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
@@ -438,9 +440,29 @@
      
         </Grid>
 
+        <!--Seed Hash-->
         <Grid Grid.Row="2">
             <Viewbox Grid.Row="0" Grid.Column="0">
-                <Label Name="HashText" Foreground="White" HorizontalAlignment="Center" FontSize="3" Padding="2" Content="Seed Hash: F448wUx4F7CaXSN2"/>
+                <Label Name="HashText" Foreground="White" HorizontalAlignment="Center" FontSize="1" Padding="2" Content="Seed Hash: F448wUx4F7CaXSN2"/>
+            </Viewbox>
+        </Grid>
+        
+        <!--Hints-->
+        <Grid Grid.Row="3">
+            <Viewbox Grid.Row="0" Grid.Column="0">
+                <Label Name="HintText" Foreground="White" HorizontalAlignment="Center" FontSize="1" Padding="2" Content="[LUNGFISH CALL] can be found at:
+[CAMA]
+"/>
+            </Viewbox>
+        </Grid>
+        
+        <!--Item Pool-->
+        <Grid Grid.Row="4"></Grid>
+
+        <!--Seed Settings-->
+        <Grid Grid.Row="5">
+            <Viewbox Grid.Row="0" Grid.Column="0">
+                <Label Name="Settings" Foreground="White" HorizontalAlignment="Center" FontSize="3" Padding="2" Content="Settings: ✔ ✔ ✔"/>
             </Viewbox>
         </Grid>
 
