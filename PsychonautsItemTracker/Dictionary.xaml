@@ -7,7 +7,7 @@
     </ControlTemplate>
 
     <!--World Icons-->
-	<Image x:Key="WhisperingRockImage" Source="images\worlds\campgrounds.png" x:Shared="False"/>
+	<Image x:Key="WhisperingRockImage" Source="images\worlds\camp.png" x:Shared="False"/>
 	<Image x:Key="ThorneyTowersImage" Source="images\worlds\asylum.png" x:Shared="False"/>
 	<Image x:Key="BasicBrainingImage" Source="images\worlds\coach.png" x:Shared="False"/>
 	<Image x:Key="BrainTumblerImage" Source="images\worlds\braintumbler.png" x:Shared="False"/>
