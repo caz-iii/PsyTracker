@@ -431,9 +431,19 @@
 
             </Grid>
 
+
+
             
             
      
         </Grid>
+
+        <Grid Grid.Row="2">
+            <Viewbox Grid.Row="0" Grid.Column="0">
+                <Label Name="HashText" Foreground="White" HorizontalAlignment="Center" FontSize="3" Padding="2" Content="Seed Hash: F448wUx4F7CaXSN2"/>
+            </Viewbox>
+        </Grid>
+
+
     </Grid>
 </Window>
