@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-    <img src="images/pokeylope.png" alt="Logo" width="80" height="80">
+    <img src="PsychonautsItemTracker/images/pokeylope.png" alt="Logo" width="80" height="80">
 
 <h3 align="center">PsychoTracker</h3>
 
@@ -19,23 +19,35 @@
 
 ## About
 
-![](images/screenshot.png)
+![](screenshot.png)
 
-Currently a work in progress. The aim with this project is to create an item tracker for use with the Psychonauts Randomizer: [PsychoRando](https://github.com/Akashortstack/PsychoRando)
+Currently a work in progress. The aim with this project is to create an item tracker as a companion app with the Psychonauts Randomizer: [PsychoRando](https://github.com/Akashortstack/PsychoRando)
 
-## Project Goals
+## Dev Roadmap
+
+### Things I gotta do for a v1 release
 
 * Drag and drop
 
+* Save/Load Progress
+
+* Manual item view settings
+
+### v2
+
+* Dynamic item rendering based off randomizer settings 
+
 * Autotracking
 
-* Display Randomizer settings as icons
-
-* Implement Hint System
+* Hint System
 
 ### Built With
 
-* [TBD]()
+* [C#](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+
+* [.NET 6](https://dotnet.microsoft.com/)
+
+* [Windows Presentation Foundation](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview/?view=netdesktop-8.0)
 
 <!-- GETTING STARTED -->
 
