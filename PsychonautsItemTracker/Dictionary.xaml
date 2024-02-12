@@ -56,6 +56,7 @@
 	<Image x:Key="BrainPolaroidMaloofImage" Source="images\checks\brainhunt\BrainPolaroidMaloof.png" x:Shared="False"/>
 	<Image x:Key="BrainPolaroidMikhailImage" Source="images\checks\brainhunt\BrainPolaroidMikhail.png" x:Shared="False"/>
 	<Image x:Key="BrainPolaroidMilkaImage" Source="images\checks\brainhunt\BrainPolaroidMilka.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidNilsImage" Source="images\checks\brainhunt\BrainPolaroidNils.png" x:Shared="False"/>
 	<Image x:Key="BrainPolaroidQuentinImage" Source="images\checks\brainhunt\BrainPolaroidQuentin.png" x:Shared="False"/>
 	<Image x:Key="BrainPolaroidVernonImage" Source="images\checks\brainhunt\BrainPolaroidVernon.png" x:Shared="False"/>
 	<Image x:Key="BrainPolaroidPhoebeImage" Source="images\checks\brainhunt\BrainPolaroidPhoebe.png" x:Shared="False"/>

@@ -695,7 +695,7 @@
                 </Button>
 
                 <Button Background="Transparent" Grid.Column="6">
-                    <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
+                    <DynamicResource ResourceKey="BrainPolaroidNilsImage"/>
                 </Button>
 
                 
