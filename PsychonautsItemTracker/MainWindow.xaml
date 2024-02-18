@@ -466,13 +466,16 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
-
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
 
 
 
             <!-- Row 1 -->
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" Name="MeritBadgeRow">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -485,7 +488,7 @@
 
                 </Grid.ColumnDefinitions>
 
-                <!--<local:Item x:Name="Fire1"          Content="{DynamicResource Min-Fire}"            Grid.Column="0"/>-->
+                
                 <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="MarksmanshipImage"/>
                 </Button>
@@ -521,7 +524,7 @@
 
             </Grid>
 
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="1" Name="ScavengerHuntRow1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -568,7 +571,7 @@
 
             </Grid>
 
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="2" Name="ScavengerHuntRow2">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -614,9 +617,8 @@
 
             </Grid>
 
-            <Grid Grid.Row="3">
+            <Grid Grid.Row="3" Name="BrainHuntRow1">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -658,9 +660,8 @@
 
             </Grid>
 
-            <Grid Grid.Row="4">
+            <Grid Grid.Row="4" Name="BrainHuntRow2">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -694,7 +695,7 @@
                     <DynamicResource ResourceKey="BrainPolaroidClemImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Click="Button_Click">
                     <DynamicResource ResourceKey="BrainPolaroidNilsImage"/>
                 </Button>
 
@@ -703,9 +704,8 @@
             </Grid>
 
 
-            <Grid Grid.Row="5">
+            <Grid Grid.Row="5" Name="BrainHuntRow3">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -735,17 +735,202 @@
                     <DynamicResource ResourceKey="BrainPolaroidChopsImage"/>
                 </Button>
 
-                <!--<Button Background="Transparent" Grid.Column="0">
-                    <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
+            </Grid>
+
+            <Grid Grid.Row="6" Name="RealWorldKeysRow">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="ButtonImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="0">
-                    <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
+                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="LungfishCallImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="0">
-                    <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
-                </Button>-->
+                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="DowsingRodImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="CobwebDusterImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="PokeylopeCakeImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="LobotoPortraitImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="GloriaTrophyImage"/>
+                </Button>
+
+
+                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="StraightJacketImage"/>
+                </Button>
+
+
+            </Grid>
+
+
+            <Grid Grid.Row="7" Name="MilkmanRow1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="SignImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="FlowersImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="CrowfeatherImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="ClippersImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="PilotHelmetImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="PhoneImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="PlungerImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="RifleImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="8" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="RollingPinImage"/>
+                </Button>
+
+
+                <Button Background="Transparent" Grid.Column="9" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="WateringCanImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="10" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="GirlScoutCraftImage"/>
+                </Button>
+
+
+            </Grid>
+
+            <Grid Grid.Row="8" Name="GloriaWaterlooRow">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+
+                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="HagathaScriptImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="KnightofJoyScriptImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="MailboatScriptImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="CandleImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="MegaphoneImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="FredsNoteImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="CoinImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="GunImage"/>
+                </Button>
+
+            </Grid>
+
+            <Grid Grid.Row="9" Name="VelvetopiaRow1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+
+                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="ArchwayPaintingImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="LadderPaintingImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="WindowPaintingImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="RosePaintingImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="VinePaintingImage"/>
+                </Button>
+
+                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                    <DynamicResource ResourceKey="RoseImage"/>
+                </Button>
+                
 
             </Grid>
 
