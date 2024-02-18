@@ -1,73 +1,73 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:PsychonautsItemTracker">
+                    xmlns:local="clr-namespace:PsyTrackerApp">
 
     <ControlTemplate x:Key="DefaultButton" TargetType="{x:Type ButtonBase}">
         <ContentPresenter Content="{TemplateBinding Content}"/>
     </ControlTemplate>
 
     <!--World Icons-->
-	<Image x:Key="WhisperingRockImage" Source="images\worlds\camp.png" x:Shared="False"/>
-	<Image x:Key="ThorneyTowersImage" Source="images\worlds\asylum.png" x:Shared="False"/>
-	<Image x:Key="BasicBrainingImage" Source="images\worlds\coach.png" x:Shared="False"/>
-	<Image x:Key="BrainTumblerImage" Source="images\worlds\braintumbler.png" x:Shared="False"/>
-	<Image x:Key="ShootingGalleryImage" Source="images\worlds\sasha.png" x:Shared="False"/>
-	<Image x:Key="DancePartyImage" Source="images\worlds\milla.png" x:Shared="False"/>
-	<Image x:Key="LungfishopolisImage" Source="images\worlds\linda.png" x:Shared="False"/>
-	<Image x:Key="MilkmanConspiracyImage" Source="images\worlds\boyd.png" x:Shared="False"/>
-	<Image x:Key="GloriasTheaterImage" Source="images\worlds\gloria.png" x:Shared="False"/>
-	<Image x:Key="WaterlooWorldImage" Source="images\worlds\fred.png" x:Shared="False"/>
-	<Image x:Key="BlackVelvetopiaImage" Source="images\worlds\edgar.png" x:Shared="False"/>
-	<Image x:Key="MeatCircusImage" Source="images\worlds\kidcoach.png" x:Shared="False"/>
+    <Image x:Key="WhisperingRockImage" Source="images\worlds\camp.png" x:Shared="False"/>
+    <Image x:Key="ThorneyTowersImage" Source="images\worlds\asylum.png" x:Shared="False"/>
+    <Image x:Key="BasicBrainingImage" Source="images\worlds\coach.png" x:Shared="False"/>
+    <Image x:Key="BrainTumblerImage" Source="images\worlds\braintumbler.png" x:Shared="False"/>
+    <Image x:Key="ShootingGalleryImage" Source="images\worlds\sasha.png" x:Shared="False"/>
+    <Image x:Key="DancePartyImage" Source="images\worlds\milla.png" x:Shared="False"/>
+    <Image x:Key="LungfishopolisImage" Source="images\worlds\linda.png" x:Shared="False"/>
+    <Image x:Key="MilkmanConspiracyImage" Source="images\worlds\boyd.png" x:Shared="False"/>
+    <Image x:Key="GloriasTheaterImage" Source="images\worlds\gloria.png" x:Shared="False"/>
+    <Image x:Key="WaterlooWorldImage" Source="images\worlds\fred.png" x:Shared="False"/>
+    <Image x:Key="BlackVelvetopiaImage" Source="images\worlds\edgar.png" x:Shared="False"/>
+    <Image x:Key="MeatCircusImage" Source="images\worlds\kidcoach.png" x:Shared="False"/>
     <Image x:Key="FordImage" Source="images\worlds\ford.png" x:Shared="False"/>
 
-	<!--Merit Badges-->
-	<Image x:Key="ClairvoyanceImage" Source="images\badges\Clairvoyance.png" x:Shared="False"/>
-	<Image x:Key="ConfusionImage" Source="images\badges\Confusion.png" x:Shared="False"/>
-	<Image x:Key="InvisibilityImage" Source="images\badges\Invisibility.png" x:Shared="False"/>
-	<Image x:Key="LevitationImage" Source="images\badges\Levitation.png" x:Shared="False"/>
-	<Image x:Key="MarksmanshipImage" Source="images\badges\Marksmanship.png" x:Shared="False"/>
-	<Image x:Key="PyrokinesisImage" Source="images\badges\Pyrokinesis.png" x:Shared="False"/>
-	<Image x:Key="ShieldImage" Source="images\badges\Shield.png" x:Shared="False"/>
-	<Image x:Key="TelekinesisImage" Source="images\badges\Telekinesis.png" x:Shared="False"/>
-	
-	<Image x:Key="BasicBrainingBadgeImage" Source="images\badges\Basic Braining.png" x:Shared="False"/>
-	<Image x:Key="MentalMagnetImage" Source="images\badges\Mental Magnet.png" x:Shared="False"/>
-	<Image x:Key="OarsmanImage" Source="images\badges\Oarsman.png" x:Shared="False"/>
+    <!--Merit Badges-->
+    <Image x:Key="ClairvoyanceImage" Source="images\badges\Clairvoyance.png" x:Shared="False"/>
+    <Image x:Key="ConfusionImage" Source="images\badges\Confusion.png" x:Shared="False"/>
+    <Image x:Key="InvisibilityImage" Source="images\badges\Invisibility.png" x:Shared="False"/>
+    <Image x:Key="LevitationImage" Source="images\badges\Levitation.png" x:Shared="False"/>
+    <Image x:Key="MarksmanshipImage" Source="images\badges\Marksmanship.png" x:Shared="False"/>
+    <Image x:Key="PyrokinesisImage" Source="images\badges\Pyrokinesis.png" x:Shared="False"/>
+    <Image x:Key="ShieldImage" Source="images\badges\Shield.png" x:Shared="False"/>
+    <Image x:Key="TelekinesisImage" Source="images\badges\Telekinesis.png" x:Shared="False"/>
 
-	<!--Beat Oleander-->
-	<Image x:Key="GloriaTrophyImage" Source="images\checks\beatoleander\gloriatrophy.png" x:Shared="False"/>
-	<Image x:Key="LobotoPortraitImage" Source="images\checks\beatoleander\lobotoportrait.png" x:Shared="False"/>
-	<Image x:Key="StraightJacketImage" Source="images\checks\beatoleander\straightjacket.png" x:Shared="False"/>
-	
-	<!--Brain Hunt-->
-	<Image x:Key="BrainPolaroidBennyImage" Source="images\checks\brainhunt\BrainPolaroidBenny.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidBobbyImage" Source="images\checks\brainhunt\BrainPolaroidBobby.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidChloeImage" Source="images\checks\brainhunt\BrainPolaroidChloe.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidChopsImage" Source="images\checks\brainhunt\BrainPolaroidChops.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidClemImage" Source="images\checks\brainhunt\BrainPolaroidClem.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidCrystalImage" Source="images\checks\brainhunt\BrainPolaroidCrystal.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidDogenImage" Source="images\checks\brainhunt\BrainPolaroidDogen.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidElkaImage" Source="images\checks\brainhunt\BrainPolaroidElka.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidEltonImage" Source="images\checks\brainhunt\BrainPolaroidElton.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidFrankeImage" Source="images\checks\brainhunt\BrainPolaroidFranke.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidJTImage" Source="images\checks\brainhunt\BrainPolaroidJT.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidKittyImage" Source="images\checks\brainhunt\BrainPolaroidKitty.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidMaloofImage" Source="images\checks\brainhunt\BrainPolaroidMaloof.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidMikhailImage" Source="images\checks\brainhunt\BrainPolaroidMikhail.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidMilkaImage" Source="images\checks\brainhunt\BrainPolaroidMilka.png" x:Shared="False"/>
+    <Image x:Key="BasicBrainingBadgeImage" Source="images\badges\Basic Braining.png" x:Shared="False"/>
+    <Image x:Key="MentalMagnetImage" Source="images\badges\Mental Magnet.png" x:Shared="False"/>
+    <Image x:Key="OarsmanImage" Source="images\badges\Oarsman.png" x:Shared="False"/>
+
+    <!--Beat Oleander-->
+    <Image x:Key="GloriaTrophyImage" Source="images\checks\beatoleander\gloriatrophy.png" x:Shared="False"/>
+    <Image x:Key="LobotoPortraitImage" Source="images\checks\beatoleander\lobotoportrait.png" x:Shared="False"/>
+    <Image x:Key="StraightJacketImage" Source="images\checks\beatoleander\straightjacket.png" x:Shared="False"/>
+
+    <!--Brain Hunt-->
+    <Image x:Key="BrainPolaroidBennyImage" Source="images\checks\brainhunt\BrainPolaroidBenny.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidBobbyImage" Source="images\checks\brainhunt\BrainPolaroidBobby.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidChloeImage" Source="images\checks\brainhunt\BrainPolaroidChloe.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidChopsImage" Source="images\checks\brainhunt\BrainPolaroidChops.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidClemImage" Source="images\checks\brainhunt\BrainPolaroidClem.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidCrystalImage" Source="images\checks\brainhunt\BrainPolaroidCrystal.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidDogenImage" Source="images\checks\brainhunt\BrainPolaroidDogen.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidElkaImage" Source="images\checks\brainhunt\BrainPolaroidElka.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidEltonImage" Source="images\checks\brainhunt\BrainPolaroidElton.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidFrankeImage" Source="images\checks\brainhunt\BrainPolaroidFranke.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidJTImage" Source="images\checks\brainhunt\BrainPolaroidJT.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidKittyImage" Source="images\checks\brainhunt\BrainPolaroidKitty.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidMaloofImage" Source="images\checks\brainhunt\BrainPolaroidMaloof.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidMikhailImage" Source="images\checks\brainhunt\BrainPolaroidMikhail.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidMilkaImage" Source="images\checks\brainhunt\BrainPolaroidMilka.png" x:Shared="False"/>
     <Image x:Key="BrainPolaroidNilsImage" Source="images\checks\brainhunt\BrainPolaroidNils.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidQuentinImage" Source="images\checks\brainhunt\BrainPolaroidQuentin.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidVernonImage" Source="images\checks\brainhunt\BrainPolaroidVernon.png" x:Shared="False"/>
-	<Image x:Key="BrainPolaroidPhoebeImage" Source="images\checks\brainhunt\BrainPolaroidPhoebe.png" x:Shared="False"/>
-	
-	<!--Scavenger Hunt-->
-	<Image x:Key="AcornImage" Source="images\checks\scavengerhunt\Acorn.png" x:Shared="False"/>
-	<Image x:Key="DinoboneImage" Source="images\checks\scavengerhunt\Dinobone.png" x:Shared="False"/>
-	<Image x:Key="DiversehelmetImage" Source="images\checks\scavengerhunt\Diversehelmet.png" x:Shared="False"/>
-	<Image x:Key="EagleclawImage" Source="images\checks\scavengerhunt\Eagleclaw.png" x:Shared="False"/>
-	<Image x:Key="EggImage" Source="images\checks\scavengerhunt\Egg.png" x:Shared="False"/>
-	<Image x:Key="FossilImage" Source="images\checks\scavengerhunt\Fossil.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidQuentinImage" Source="images\checks\brainhunt\BrainPolaroidQuentin.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidVernonImage" Source="images\checks\brainhunt\BrainPolaroidVernon.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidPhoebeImage" Source="images\checks\brainhunt\BrainPolaroidPhoebe.png" x:Shared="False"/>
+
+    <!--Scavenger Hunt-->
+    <Image x:Key="AcornImage" Source="images\checks\scavengerhunt\Acorn.png" x:Shared="False"/>
+    <Image x:Key="DinoboneImage" Source="images\checks\scavengerhunt\Dinobone.png" x:Shared="False"/>
+    <Image x:Key="DiversehelmetImage" Source="images\checks\scavengerhunt\Diversehelmet.png" x:Shared="False"/>
+    <Image x:Key="EagleclawImage" Source="images\checks\scavengerhunt\Eagleclaw.png" x:Shared="False"/>
+    <Image x:Key="EggImage" Source="images\checks\scavengerhunt\Egg.png" x:Shared="False"/>
+    <Image x:Key="FossilImage" Source="images\checks\scavengerhunt\Fossil.png" x:Shared="False"/>
     <Image x:Key="GlasseyeImage" Source="images\checks\scavengerhunt\Glasseye.png" x:Shared="False"/>
     <Image x:Key="GolddoubbloonImage" Source="images\checks\scavengerhunt\Golddoubbloon.png" x:Shared="False"/>
     <Image x:Key="IdolImage" Source="images\checks\scavengerhunt\Idol.png" x:Shared="False"/>
@@ -78,25 +78,25 @@
     <Image x:Key="SandwichImage" Source="images\checks\scavengerhunt\Sandwich.png" x:Shared="False"/>
     <Image x:Key="VoodoodollImage" Source="images\checks\scavengerhunt\Voodoodoll.png" x:Shared="False"/>
     <Image x:Key="WatchImage" Source="images\checks\scavengerhunt\Watch.png" x:Shared="False"/>
-    
+
     <!--Keys-->
     <!--i.e. unlocks a barrier in the phsyical or mental worlds-->
-    
+
     <!--Physical World Locks-->
     <Image x:Key="ButtonImage" Source="images\keys\Button.png" x:Shared="False"/>
     <Image x:Key="CobwebDusterImage" Source="images\keys\cobweb-duster.png" x:Shared="False"/>
     <Image x:Key="DowsingRodImage" Source="images\keys\dowsingrod.png" x:Shared="False"/>
     <Image x:Key="PokeylopeCakeImage" Source="images\keys\pokeylopecake.png" x:Shared="False"/>
     <Image x:Key="LungfishCallImage" Source="images\keys\seaurchinwhistle.png" x:Shared="False"/>
-    
+
     <!--Sasha's Shooting Gallery-->
     <!--Marksmanship Badge-->
-        
+
     <!--Milla's Dance Party-->
     <!--Levitation Badge-->
-    
+
     <!--Brain Tumbler-->
-    <!--Levitation Badge-->       
+    <!--Levitation Badge-->
 
     <!--Gloria Locks-->
     <Image x:Key="HagathaScriptImage" Source="images\keys\gloria\hagathascript.png" x:Shared="False"/>
@@ -133,22 +133,22 @@
     <Image x:Key="GunImage" Source="images\keys\waterloo\ww_gun copy.png" x:Shared="False"/>
     <Image x:Key="CoinImage" Source="images\keys\waterloo\ww_pricelesscoin.png" x:Shared="False"/>
     <!--Telekinesis Badge-->
-    
-    
+
+
     <!--Emotional Baggage Tags-->
     <Image x:Key="DufflebagTagImage" Source="images\tags\dufflebagtag.png" x:Shared="False"/>
     <Image x:Key="HatboxTagImage" Source="images\tags\hatboxtag.png" x:Shared="False"/>
     <Image x:Key="PurseTagImage" Source="images\tags\pursetag.png" x:Shared="False"/>
     <Image x:Key="SteamerTrunkTagImage" Source="images\tags\steamertrunktag.png" x:Shared="False"/>
     <Image x:Key="SuitcaseTagImage" Source="images\tags\suitcasetag.png" x:Shared="False"/>
-    
+
     <!--Victory Conditions-->
     <Image x:Key="PsychonautBadgeImage" Source="images\victory-conditions\beatalllevels.png" x:Shared="False"/>
     <Image x:Key="BrainTankImage" Source="images\victory-conditions\beatoleander.png" x:Shared="False"/>
     <Image x:Key="BrainJarImage" Source="images\victory-conditions\brainhunt.png" x:Shared="False"/>
     <Image x:Key="RankImage" Source="images\victory-conditions\rank101.png" x:Shared="False"/>
     <Image x:Key="ScavengerHuntListImage" Source="images\victory-conditions\scavengerhunt.png" x:Shared="False"/>
-    
+
     <!--Extra (unused?) checks-->
     <Image x:Key="PokeylopeImage" Source="images\pokeylope.png" x:Shared="False"/>
 

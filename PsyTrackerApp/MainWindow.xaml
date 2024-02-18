@@ -1,12 +1,11 @@
-﻿<Window x:Class="PsychonautsItemTracker.MainWindow"
+﻿<Window x:Class="PsyTrackerApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:PsychonautsItemTracker"
+        xmlns:local="clr-namespace:PsyTrackerApp"
         mc:Ignorable="d"
-        ResizeMode="CanResize"
-        Title="PsyTracker" Height="880" Width="570" Background="#303030" MinHeight="440" MinWidth="300">
+        Title="PsyTracker" Height="880" Width="750" Background="#303030" MinHeight="440" MinWidth="300">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -32,7 +31,7 @@
                 </Menu>
             </DockPanel>
         </Grid>
-        
+
 
 
         <Grid Grid.Row="1">
@@ -50,7 +49,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                
+
                 <!--Whispering Rock-->
                 <Grid x:Name="WhisperingRockGrid" Grid.Row="0" >
                     <Grid.ColumnDefinitions>
@@ -153,7 +152,7 @@
                         <Button Name ="DancePartyButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="DancePartyImage"/>
                         </Button>
-                        
+
                     </Grid>
                 </Grid>
 
@@ -217,7 +216,7 @@
 
 
 
-  
+
             </Grid>
 
             <Grid Grid.Column="1">
@@ -431,9 +430,9 @@
 
 
 
-            
-            
-     
+
+
+
         </Grid>
 
         <!--Seed Hash-->
@@ -442,7 +441,7 @@
                 <Label Name="HashText" Foreground="White" HorizontalAlignment="Center" FontSize="1" Padding="2" Content="Seed Hash: F448wUx4F7CaXSN2"/>
             </Viewbox>
         </Grid>-->
-        
+
         <!--Hints-->
         <!--<Grid Grid.Row="3">
             <Viewbox Grid.Row="0" Grid.Column="0">
@@ -451,7 +450,7 @@
 "/>
             </Viewbox>
         </Grid>-->
-        
+
         <!--Item Pool-->
         <Grid Grid.Row="4" Name="ItemPool">
             <Grid.RowDefinitions>
@@ -694,7 +693,7 @@
                     <DynamicResource ResourceKey="BrainPolaroidNilsImage"/>
                 </Button>
 
-                
+
 
             </Grid>
 
@@ -925,7 +924,7 @@
                 <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="RoseImage"/>
                 </Button>
-                
+
 
             </Grid>
 

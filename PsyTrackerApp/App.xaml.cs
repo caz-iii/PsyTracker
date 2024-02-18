@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace PsychonautsItemTracker
+namespace PsyTrackerApp
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -10,4 +10,5 @@ namespace PsychonautsItemTracker
     public partial class App : Application
     {
     }
+
 }
