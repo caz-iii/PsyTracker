@@ -6,11 +6,6 @@
         xmlns:local="clr-namespace:PsychonautsItemTracker"
         mc:Ignorable="d"
         ResizeMode="CanResize"
-        KeyDown="Window_KeyDown"
-        Closing="Window_Closing"
-        LocationChanged="Window_LocationChanged"
-        SizeChanged="Window_SizeChanged"
-        AllowDrop="True" Drop="DropFile"
         Title="PsyTracker" Height="880" Width="570" Background="#303030" MinHeight="440" MinWidth="300">
     <Grid>
 
