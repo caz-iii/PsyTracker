@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-    <img src="PsychonautsItemTracker/images/pokeylope.png" alt="Logo" width="80" height="80">
+    <img src="PsyTrackerApp/images/pokeylope.png" alt="Logo" width="80" height="80">
 
 <h3 align="center">PsyTracker</h3>
 
