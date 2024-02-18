@@ -71,7 +71,7 @@
                             <ColumnDefinition Width=".1*"/>
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
-                        <Button Name ="WhisperingRockButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="WhisperingRockButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="WhisperingRockImage"/>
                         </Button>
                     </Grid>
@@ -97,7 +97,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="BasicBrainingButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="BasicBrainingButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="BasicBrainingImage"/>
                         </Button>
                     </Grid>
@@ -123,7 +123,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="ShootingGalleryButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="ShootingGalleryButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="ShootingGalleryImage"/>
                         </Button>
                     </Grid>
@@ -150,7 +150,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="DancePartyButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="DancePartyButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="DancePartyImage"/>
                         </Button>
                         
@@ -180,7 +180,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="BrainTumblerButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="BrainTumblerButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="BrainTumblerImage"/>
                         </Button>
 
@@ -208,7 +208,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="LungfishopolisButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="LungfishopolisButton" Background="Transparent"  Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="LungfishopolisImage"/>
                         </Button>
 
@@ -251,7 +251,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="AsylumButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="AsylumButton" Background="Transparent"  Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="ThorneyTowersImage"/>
                         </Button>
 
@@ -278,7 +278,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="MilkManButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="MilkManButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="MilkmanConspiracyImage"/>
                         </Button>
 
@@ -305,7 +305,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="GloriaButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="GloriaButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="GloriasTheaterImage"/>
                         </Button>
 
@@ -332,7 +332,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="WaterlooButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="WaterlooButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="WaterlooWorldImage"/>
                         </Button>
 
@@ -362,7 +362,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="EdgarButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="EdgarButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="BlackVelvetopiaImage"/>
                         </Button>
 
@@ -390,7 +390,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="KidCoachButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="KidCoachButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="MeatCircusImage"/>
                         </Button>
 
@@ -417,7 +417,7 @@
                             <ColumnDefinition Width=".3*"/>
                         </Grid.ColumnDefinitions>
 
-                        <Button Name ="FordButton" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
+                        <Button Name ="FordButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                             <DynamicResource ResourceKey="FordImage"/>
                         </Button>
 
