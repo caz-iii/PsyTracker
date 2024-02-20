@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PsyTrackerApp"
         mc:Ignorable="d"
-        Title="PsyTracker" Height="880" Width="750" Background="#303030" MinHeight="440" MinWidth="300">
+        Title="PsyTracker" Height="880" Width="570" Background="#303030" MinHeight="440" MinWidth="300">
     <Grid>
 
         <Grid.RowDefinitions>
