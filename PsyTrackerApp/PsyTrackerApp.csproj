@@ -8,4 +8,483 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="images\badges\Basic Braining.png" />
+    <None Remove="images\badges\Clairvoyance.png" />
+    <None Remove="images\badges\Confusion.png" />
+    <None Remove="images\badges\Invisibility.png" />
+    <None Remove="images\badges\Levitation.png" />
+    <None Remove="images\badges\Marksmanship.png" />
+    <None Remove="images\badges\Mental Magnet.png" />
+    <None Remove="images\badges\Oarsman.png" />
+    <None Remove="images\badges\Pyrokinesis.png" />
+    <None Remove="images\badges\Shield.png" />
+    <None Remove="images\badges\Telekinesis.png" />
+    <None Remove="images\checks\beatoleander\gloriatrophy.png" />
+    <None Remove="images\checks\beatoleander\lobotoportrait.png" />
+    <None Remove="images\checks\beatoleander\straightjacket.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidBenny.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidBobby.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidChloe.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidChops.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidClem.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidCrystal.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidDogen.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidElka.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidElton.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidFranke.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidJT.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidKitty.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidMaloof.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidMikhail.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidMilka.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidNils.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidPhoebe.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidQuentin.png" />
+    <None Remove="images\checks\brainhunt\BrainPolaroidVernon.png" />
+    <None Remove="images\checks\scavengerhunt\Acorn.png" />
+    <None Remove="images\checks\scavengerhunt\Dinobone.png" />
+    <None Remove="images\checks\scavengerhunt\Diversehelmet.png" />
+    <None Remove="images\checks\scavengerhunt\Eagleclaw.png" />
+    <None Remove="images\checks\scavengerhunt\Egg.png" />
+    <None Remove="images\checks\scavengerhunt\Fossil.png" />
+    <None Remove="images\checks\scavengerhunt\Glasseye.png" />
+    <None Remove="images\checks\scavengerhunt\Golddoubbloon.png" />
+    <None Remove="images\checks\scavengerhunt\Idol.png" />
+    <None Remove="images\checks\scavengerhunt\Oldskull.png" />
+    <None Remove="images\checks\scavengerhunt\pipe.png" />
+    <None Remove="images\checks\scavengerhunt\Piratescope.png" />
+    <None Remove="images\checks\scavengerhunt\Psychocomic.png" />
+    <None Remove="images\checks\scavengerhunt\Sandwich.png" />
+    <None Remove="images\checks\scavengerhunt\Voodoodoll.png" />
+    <None Remove="images\checks\scavengerhunt\Watch.png" />
+    <None Remove="images\keys\Button.png" />
+    <None Remove="images\keys\cobweb-duster.png" />
+    <None Remove="images\keys\dowsingrod.png" />
+    <None Remove="images\keys\gloria\hagathascript.png" />
+    <None Remove="images\keys\gloria\knightofjoyscript.png" />
+    <None Remove="images\keys\gloria\mailboatscript.png" />
+    <None Remove="images\keys\gloria\th_candle.png" />
+    <None Remove="images\keys\gloria\th_megaphone.png" />
+    <None Remove="images\keys\milkman\crowfeather.png" />
+    <None Remove="images\keys\milkman\mm_clippers.png" />
+    <None Remove="images\keys\milkman\mm_flowers.png" />
+    <None Remove="images\keys\milkman\mm_godseye.png" />
+    <None Remove="images\keys\milkman\mm_helihelmet.png" />
+    <None Remove="images\keys\milkman\mm_phone.png" />
+    <None Remove="images\keys\milkman\mm_plunger.png" />
+    <None Remove="images\keys\milkman\mm_rifle.png" />
+    <None Remove="images\keys\milkman\mm_rollingpin.png" />
+    <None Remove="images\keys\milkman\mm_sign.png" />
+    <None Remove="images\keys\milkman\mm_wateringcan.png" />
+    <None Remove="images\keys\pokeylopecake.png" />
+    <None Remove="images\keys\seaurchinwhistle.png" />
+    <None Remove="images\keys\velvetopia\archwaypainting.png" />
+    <None Remove="images\keys\velvetopia\ladderpainting.png" />
+    <None Remove="images\keys\velvetopia\rose.png" />
+    <None Remove="images\keys\velvetopia\rosepainting.png" />
+    <None Remove="images\keys\velvetopia\vinepainting.png" />
+    <None Remove="images\keys\velvetopia\windowpainting.png" />
+    <None Remove="images\keys\waterloo\ww_fredsnote.png" />
+    <None Remove="images\keys\waterloo\ww_gun copy.png" />
+    <None Remove="images\keys\waterloo\ww_pricelesscoin.png" />
+    <None Remove="images\other\bacon.png" />
+    <None Remove="images\other\ballcolorizer.png" />
+    <None Remove="images\other\birddinner.png" />
+    <None Remove="images\other\co_brainpolaroidmilla.png" />
+    <None Remove="images\other\co_brainpolaroidsasha.png" />
+    <None Remove="images\other\dreamfluff.png" />
+    <None Remove="images\other\fordcore.png" />
+    <None Remove="images\other\lilibracelet.png" />
+    <None Remove="images\other\minddoor.png" />
+    <None Remove="images\other\psiballarrowhead.png" />
+    <None Remove="images\other\psiballhealth.png" />
+    <None Remove="images\other\smellingsalts.png" />
+    <None Remove="images\other\squirreldinner.png" />
+    <None Remove="images\pokeylope.png" />
+    <None Remove="images\tags\dufflebagtag.png" />
+    <None Remove="images\tags\hatboxtag.png" />
+    <None Remove="images\tags\pursetag.png" />
+    <None Remove="images\tags\steamertrunktag.png" />
+    <None Remove="images\tags\suitcasetag.png" />
+    <None Remove="images\victory-conditions\beatalllevels.png" />
+    <None Remove="images\victory-conditions\beatoleander.png" />
+    <None Remove="images\victory-conditions\brainhunt.png" />
+    <None Remove="images\victory-conditions\rank101.png" />
+    <None Remove="images\victory-conditions\scavengerhunt.png" />
+    <None Remove="images\worlds\asylum.png" />
+    <None Remove="images\worlds\boyd.png" />
+    <None Remove="images\worlds\braintumbler.png" />
+    <None Remove="images\worlds\camp.png" />
+    <None Remove="images\worlds\coach.png" />
+    <None Remove="images\worlds\edgar.png" />
+    <None Remove="images\worlds\ford.png" />
+    <None Remove="images\worlds\fred.png" />
+    <None Remove="images\worlds\gloria.png" />
+    <None Remove="images\worlds\kidcoach.png" />
+    <None Remove="images\worlds\linda.png" />
+    <None Remove="images\worlds\milla.png" />
+    <None Remove="images\worlds\sasha.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\other\ballcolorizer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\keys\cobweb-duster.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\keys\Button.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\dowsingrod.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\gloria\th_megaphone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\badges\Basic Braining.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Clairvoyance.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Confusion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Invisibility.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Levitation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Marksmanship.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Mental Magnet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Oarsman.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Pyrokinesis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Shield.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\badges\Telekinesis.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\beatoleander\gloriatrophy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\beatoleander\lobotoportrait.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\beatoleander\straightjacket.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidBenny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidBobby.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidChloe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidChops.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidClem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidCrystal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidDogen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidElka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidElton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidFranke.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidJT.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidKitty.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidMaloof.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidMikhail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidMilka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidNils.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidPhoebe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidQuentin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\BrainPolaroidVernon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Acorn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Dinobone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Diversehelmet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Eagleclaw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Egg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Fossil.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Glasseye.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Golddoubbloon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Idol.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Oldskull.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\pipe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Piratescope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Psychocomic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Sandwich.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Voodoodoll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\scavengerhunt\Watch.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\gloria\hagathascript.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\gloria\knightofjoyscript.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\gloria\mailboatscript.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\gloria\th_candle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\crowfeather.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_clippers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_flowers.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_godseye.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_helihelmet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_phone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_plunger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_rifle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_rollingpin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_sign.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\milkman\mm_wateringcan.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\pokeylopecake.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\seaurchinwhistle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\velvetopia\archwaypainting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\velvetopia\ladderpainting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\velvetopia\rose.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\velvetopia\rosepainting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\velvetopia\vinepainting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\velvetopia\windowpainting.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\waterloo\ww_fredsnote.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\waterloo\ww_gun copy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\keys\waterloo\ww_pricelesscoin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\bacon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\birddinner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\co_brainpolaroidmilla.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\co_brainpolaroidsasha.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\dreamfluff.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\fordcore.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\lilibracelet.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\minddoor.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\psiballarrowhead.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\psiballhealth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\smellingsalts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\other\squirreldinner.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\pokeylope.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\tags\dufflebagtag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\tags\hatboxtag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\tags\pursetag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\tags\steamertrunktag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\tags\suitcasetag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\victory-conditions\beatalllevels.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\victory-conditions\beatoleander.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\victory-conditions\brainhunt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\victory-conditions\rank101.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\victory-conditions\scavengerhunt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\asylum.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\boyd.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\braintumbler.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\camp.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\coach.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\edgar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\ford.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\fred.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\gloria.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\kidcoach.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\linda.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\milla.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\worlds\sasha.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>
