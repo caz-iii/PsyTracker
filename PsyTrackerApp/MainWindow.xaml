@@ -483,35 +483,35 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="MarksmanshipImage" />
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="LevitationImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="ShieldImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PyrokinesisImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="TelekinesisImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="InvisibilityImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="ClairvoyanceImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="ConfusionImage"/>
                 </Button>
 
@@ -531,35 +531,35 @@
 
                 </Grid.ColumnDefinitions>
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="AcornImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="DinoboneImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="DiversehelmetImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="EagleclawImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="EggImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="FossilImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="GlasseyeImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="GolddoubbloonImage"/>
                 </Button>
 
@@ -577,35 +577,35 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="IdolImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="OldskullImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PipeImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PiratescopeImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PsychocomicImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="SandwichImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="VoodoodollImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="WatchImage"/>
                 </Button>
 
@@ -622,31 +622,31 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidDogenImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidBennyImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidElkaImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidKittyImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidChloeImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidFrankeImage"/>
                 </Button>
 
@@ -665,31 +665,31 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidJTImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidQuentinImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidVernonImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidMilkaImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidCrystalImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidClemImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidNilsImage"/>
                 </Button>
 
@@ -709,23 +709,23 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidMaloofImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidMikhailImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidPhoebeImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidEltonImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
                     <DynamicResource ResourceKey="BrainPolaroidChopsImage"/>
                 </Button>
 
@@ -743,36 +743,36 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="ButtonImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="LungfishCallImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="DowsingRodImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="CobwebDusterImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PokeylopeCakeImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="LobotoPortraitImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="GloriaTrophyImage"/>
                 </Button>
 
 
-                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="StraightJacketImage"/>
                 </Button>
 
@@ -795,48 +795,48 @@
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="SignImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="FlowersImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="CrowfeatherImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="ClippersImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PilotHelmetImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PhoneImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="PlungerImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="RifleImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="8" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="8" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="RollingPinImage"/>
                 </Button>
 
 
-                <Button Background="Transparent" Grid.Column="9" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="9" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="WateringCanImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="10" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="10" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="GirlScoutCraftImage"/>
                 </Button>
 
@@ -856,35 +856,35 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="HagathaScriptImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="KnightofJoyScriptImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="MailboatScriptImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="CandleImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="MegaphoneImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="FredsNoteImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="CoinImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="GunImage"/>
                 </Button>
 
@@ -901,27 +901,27 @@
                 </Grid.ColumnDefinitions>
 
 
-                <Button Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="ArchwayPaintingImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="LadderPaintingImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="WindowPaintingImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="RosePaintingImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="VinePaintingImage"/>
                 </Button>
 
-                <Button Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
+                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
                     <DynamicResource ResourceKey="RoseImage"/>
                 </Button>
 
