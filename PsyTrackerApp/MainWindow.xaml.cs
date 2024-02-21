@@ -75,7 +75,6 @@ namespace PsyTrackerApp
             if (selected != null)
             {
                 
-
                 for (int i = 0; i < worlds.Count; ++i)
                 {
                     if (selected == worlds[i])
