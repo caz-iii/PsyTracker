@@ -5,940 +5,413 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PsyTrackerApp"
         mc:Ignorable="d"
-        Title="PsyTracker" Height="880" Width="570" Background="#303030" MinHeight="440" MinWidth="300">
-    <Grid>
+        ResizeMode="NoResize"
+        KeyDown="Window_KeyDown"
+        Closing="Window_Closing"
+        LocationChanged="Window_LocationChanged"
+        Title="PsyTracker" Height="880" Width="570">
+    <Window.Resources>
+        <ResourceDictionary>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.3*"/>
-            <RowDefinition Height="7*"/>
-            <!--<RowDefinition Height="0.9*" Name="SeedHash"/>-->
-            <!--<RowDefinition Height="0.9*" Name="Hints"/>-->
-            <RowDefinition Height="2*" Name="ItemPoolRow"/>
-            <!--<RowDefinition Height="0.9*" Name="SeedSettings"/>-->
-        </Grid.RowDefinitions>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
 
-        <Grid Grid.Row="0">
-            <DockPanel>
-                <Menu DockPanel.Dock="Top" Background="White">
-                    <Menu.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <DockPanel HorizontalAlignment="Stretch"/>
-                        </ItemsPanelTemplate>
-                    </Menu.ItemsPanel>
-                    <MenuItem Header="File"/>
-                    <MenuItem Header="Edit"/>
-                    <MenuItem Header="Options"/>
-                </Menu>
-            </DockPanel>
-        </Grid>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <DockPanel>
+        <Menu DockPanel.Dock="Top" Background="White">
+            <MenuItem Header="_Options">
+                <MenuItem Name="Test" Header="Test"/>
+                <!-- <Separator/> -->
+                <!-- <MenuItem Name="PromiseCharmOption" Header="Promise Charm" IsCheckable="True" IsChecked="False" Click="PromiseCharmToggle"/> -->
+            </MenuItem>
+        </Menu>
 
 
+        <Canvas Name="Window" Background="#303030">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Height="630">
+                    
+                    <StackPanel Height="630" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <StackPanel Orientation="Horizontal" Width="270">
+                            <StackPanel>
+                                <Button Name ="WhisperingRock" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                    <DynamicResource ResourceKey="WhisperingRockImage"/>
+                                </Button>
+                                <!-- <Image Name="WhisperingRockHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            </StackPanel>
+                            <Image Name="WhisperingRockBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            <local:WorldGrid x:Name="WhisperingRockGrid" Height="40" Width="200"/>
+                        </StackPanel>
 
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+                        <StackPanel Orientation="Horizontal" Width="270">
+                            <StackPanel>
+                                <Button Name="BasicBraining" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                    <DynamicResource ResourceKey="BasicBrainingImage"/>
+                                </Button>
+                                <!-- <Image Name="BasicBrainingHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            </StackPanel>
+                            <Image Name="BasicBrainingBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            <local:WorldGrid x:Name="BasicBrainingGrid" Height="40" Width="200"/>
+                        </StackPanel>
 
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal" Width="270">
+                            <StackPanel>
+                                <Button Name="ShootingGallery" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                    <DynamicResource ResourceKey="ShootingGalleryImage"/>
+                                </Button>
+                                <!-- <Image Name="ShootingGalleryHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            </StackPanel>
+                            <Image Name="ShootingGalleryBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            <local:WorldGrid x:Name="ShootingGalleryGrid" Height="40" Width="200"/>
+                        </StackPanel>
 
-                <!--Whispering Rock-->
-                <Grid x:Name="WhisperingRockGrid" Grid.Row="0" >
+                        <StackPanel Orientation="Horizontal" Width="270">
+                            <StackPanel>
+                                <Button Name="DanceParty" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                    <DynamicResource ResourceKey="DancePartyImage"/>
+                                </Button>
+                                <!-- <Image Name="DancePartyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            </StackPanel>
+                            <Image Name="DancePartyBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            <local:WorldGrid x:Name="DancePartyGrid" Height="40" Width="200"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Width="270">
+                            <StackPanel>
+                                <Button Name="BrainTumbler" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                    <DynamicResource ResourceKey="BrainTumblerImage"/>
+                                </Button>
+                                <!-- <Image Name="BrainTumblerHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            </StackPanel>
+                            <Image Name="BrainTumblerBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            <local:WorldGrid x:Name="BrainTumblerGrid" Height="40" Width="200"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal" Width="270">
+                            <StackPanel>
+                                <Button Name="Lungfishopolis" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                    <DynamicResource ResourceKey="LungfishopolisImage"/>
+                                </Button>
+                                <!-- <Image Name="LungfishopolisHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            </StackPanel>
+                            <Image Name="LungfishopolisBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            <local:WorldGrid x:Name="LungfishopolisGrid" Height="40" Width="200"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <Button Name="Ford" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="45" Background="#303030" PreviewMouseDown="OnMouseDown" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                    <DynamicResource ResourceKey="FordImage"/>
+                                </Button>
+                            </StackPanel>
+                            <Image Name="FordBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            <local:WorldGrid x:Name="FordGrid" Height="40" Width="200"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                    <StackPanel>
+
+                        <StackPanel Height="590" Width="280" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel>
+                                    <Button Name ="ThorneyTowers" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                        <DynamicResource ResourceKey="ThorneyTowersImage"/>
+                                    </Button>
+                                    <!-- <Image Name="ThorneyTowersHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                </StackPanel>
+                                <Image Name="ThorneyTowersBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                                <local:WorldGrid x:Name="ThorneyTowersGrid" Height="40" Width="200"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel>
+                                    <Button Name="MilkmanConspiracy" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                        <DynamicResource ResourceKey="MilkmanConspiracyImage"/>
+                                    </Button>
+                                    <!-- <Image Name="MilkmanConspiracyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                </StackPanel>
+                                <Image Name="MilkmanConspiracyBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                                <local:WorldGrid x:Name="MilkmanConspiracyGrid" Height="40" Width="200"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel>
+                                    <Button Name="GloriasTheater" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                        <DynamicResource ResourceKey="GloriasTheaterImage"/>
+                                    </Button>
+                                    <!-- <Image Name="GloriasTheaterHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                </StackPanel>
+                                <Image Name="GloriasTheaterBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                                <local:WorldGrid x:Name="GloriasTheaterGrid" Height="40" Width="200"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel>
+                                    <Button Name="WaterlooWorld" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                        <DynamicResource ResourceKey="WaterlooWorldImage"/>
+                                    </Button>
+                                    <!-- <Image Name="WaterlooWorldHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                </StackPanel>
+                                <Image Name="WaterlooWorldBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                                <local:WorldGrid x:Name="WaterlooWorldGrid" Height="40" Width="200"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel>
+                                    <Button Name="BlackVelvetopia" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                        <DynamicResource ResourceKey="BlackVelvetopiaImage"/>
+                                    </Button>
+                                    <!-- <Image Name="BlackVelvetopiaHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                </StackPanel>
+                                <Image Name="BlackVelvetopiaBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                                <local:WorldGrid x:Name="BlackVelvetopiaGrid" Height="40" Width="200"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <StackPanel>
+                                    <Button Name="MeatCircus" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
+                                        <DynamicResource ResourceKey="MeatCircusImage"/>
+                                    </Button>
+                                    <!-- <Image Name="MeatCircusHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                </StackPanel>
+                                <Image Name="MeatCircusBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                                <local:WorldGrid x:Name="MeatCircusGrid" Height="40" Width="200"/>
+                            </StackPanel>
+
+                <Grid Name="ItemPool" Height="160" Width="550" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <!-- path width 2.2 -->
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <!-- path width 2 -->
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Name ="WhisperingRockButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="WhisperingRockImage"/>
-                        </Button>
-                    </Grid>
+                    <local:Item x:Name="Clairvoyance" Grid.Row="0" Grid.Column="0">
+                        <DynamicResource ResourceKey="ClairvoyanceImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Confusion" Grid.Row="0" Grid.Column="1">
+                        <DynamicResource ResourceKey="ConfusionImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Report3" Grid.Row="0" Grid.Column="2">
+                        <DynamicResource ResourceKey="AnsemReport3"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Report4" Grid.Row="0" Grid.Column="3">
+                        <DynamicResource ResourceKey="AnsemReport4"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report5" Grid.Row="0" Grid.Column="4">
+                        <DynamicResource ResourceKey="AnsemReport5"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report6" Grid.Row="0" Grid.Column="5">
+                        <DynamicResource ResourceKey="AnsemReport6"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report7" Grid.Row="0" Grid.Column="6">
+                        <DynamicResource ResourceKey="AnsemReport7"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report8" Grid.Row="0" Grid.Column="7">
+                        <DynamicResource ResourceKey="AnsemReport8"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report9" Grid.Row="0" Grid.Column="8">
+                        <DynamicResource ResourceKey="AnsemReport9"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report10" Grid.Row="0" Grid.Column="9">
+                        <DynamicResource ResourceKey="AnsemReport10"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report11" Grid.Row="0" Grid.Column="10">
+                        <DynamicResource ResourceKey="AnsemReport11"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report12" Grid.Row="0" Grid.Column="11">
+                        <DynamicResource ResourceKey="AnsemReport12"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Report13" Grid.Row="0" Grid.Column="12">
+                        <DynamicResource ResourceKey="AnsemReport13"/>
+                    </local:Item>
+                    
+                    <local:Item x:Name="Fire1" Grid.Row="1" Grid.Column="0">
+                        <DynamicResource ResourceKey="Fire"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Fire2" Grid.Row="1" Grid.Column="1">
+                        <DynamicResource ResourceKey="Fire"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Fire3" Grid.Row="1" Grid.Column="2">
+                        <DynamicResource ResourceKey="Fire"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Blizzard1" Grid.Row="1" Grid.Column="3">
+                        <DynamicResource ResourceKey="Blizzard"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Blizzard2" Grid.Row="1" Grid.Column="4">
+                        <DynamicResource ResourceKey="Blizzard"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Blizzard3" Grid.Row="1" Grid.Column="5">
+                        <DynamicResource ResourceKey="Blizzard"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Thunder1" Grid.Row="1" Grid.Column="6">
+                        <DynamicResource ResourceKey="Thunder"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Thunder2" Grid.Row="1" Grid.Column="7">
+                        <DynamicResource ResourceKey="Thunder"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Thunder3" Grid.Row="1" Grid.Column="8">
+                        <DynamicResource ResourceKey="Thunder"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Cure1" Grid.Row="1" Grid.Column="9">
+                        <DynamicResource ResourceKey="Cure"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Cure2" Grid.Row="1" Grid.Column="10">
+                        <DynamicResource ResourceKey="Cure"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Cure3" Grid.Row="1" Grid.Column="11">
+                        <DynamicResource ResourceKey="Cure"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Reflect1" Grid.Row="2" Grid.Column="0">
+                        <DynamicResource ResourceKey="Reflect"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Reflect2" Grid.Row="2" Grid.Column="1">
+                        <DynamicResource ResourceKey="Reflect"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Reflect3" Grid.Row="2" Grid.Column="2">
+                        <DynamicResource ResourceKey="Reflect"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Magnet1" Grid.Row="2" Grid.Column="3">
+                        <DynamicResource ResourceKey="Magnet"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Magnet2" Grid.Row="2" Grid.Column="4">
+                        <DynamicResource ResourceKey="Magnet"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Magnet3" Grid.Row="2" Grid.Column="5">
+                        <DynamicResource ResourceKey="Magnet"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Valor" Grid.Row="2" Grid.Column="6">
+                        <DynamicResource ResourceKey="Valor"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Wisdom" Grid.Row="2" Grid.Column="7">
+                        <DynamicResource ResourceKey="Wisdom"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Limit" Grid.Row="2" Grid.Column="8">
+                        <DynamicResource ResourceKey="Limit"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Master" Grid.Row="2" Grid.Column="9">
+                        <DynamicResource ResourceKey="Master"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Final" Grid.Row="2" Grid.Column="10">
+                        <DynamicResource ResourceKey="Final"/>
+                    </local:Item>
+
+                    <local:Item x:Name="OnceMore" Grid.Row="2" Grid.Column="11">
+                        <DynamicResource ResourceKey="OnceMore"/>
+                    </local:Item>
+
+                    <local:Item x:Name="SecondChance" Grid.Row="2" Grid.Column="12">
+                        <DynamicResource ResourceKey="SecondChance"/>
+                    </local:Item>
+
+                    <local:Item x:Name="TornPage1" Grid.Row="3" Grid.Column="0">
+                        <DynamicResource ResourceKey="TornPage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="TornPage2" Grid.Row="3" Grid.Column="1">
+                        <DynamicResource ResourceKey="TornPage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="TornPage3" Grid.Row="3" Grid.Column="2">
+                        <DynamicResource ResourceKey="TornPage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="TornPage4" Grid.Row="3" Grid.Column="3">
+                        <DynamicResource ResourceKey="TornPage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="TornPage5" Grid.Row="3" Grid.Column="4">
+                        <DynamicResource ResourceKey="TornPage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Lamp" Grid.Row="3" Grid.Column="5">
+                        <DynamicResource ResourceKey="Genie"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Ukulele" Grid.Row="3" Grid.Column="6">
+                        <DynamicResource ResourceKey="Stitch"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Baseball" Grid.Row="3" Grid.Column="7">
+                        <DynamicResource ResourceKey="ChickenLittle"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Feather" Grid.Row="3" Grid.Column="8">
+                        <DynamicResource ResourceKey="PeterPan"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Nonexistence" Grid.Row="3" Grid.Column="9">
+                        <DynamicResource ResourceKey="ProofOfNonexistence"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Connection" Grid.Row="3" Grid.Column="10">
+                        <DynamicResource ResourceKey="ProofOfConnection"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Peace" Grid.Row="3" Grid.Column="11">
+                        <DynamicResource ResourceKey="ProofOfPeace"/>
+                    </local:Item>
+
+                    <local:Item x:Name="PromiseCharm" Grid.Row="3" Grid.Column="12">
+                        <DynamicResource ResourceKey="PromiseCharm"/>
+                    </local:Item>
+                    
                 </Grid>
+            </StackPanel>
 
-                <!--Basic Braining-->
-                <Grid x:Name="BasicBrainingGrid" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="BasicBrainingButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="BasicBrainingImage"/>
-                        </Button>
-                    </Grid>
-                </Grid>
-
-                <!--Sasha-->
-                <Grid x:Name="ShootingGalleryGrid" Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="ShootingGalleryButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="ShootingGalleryImage"/>
-                        </Button>
-                    </Grid>
-                </Grid>
-
-
-                <!--Milla-->
-                <Grid x:Name="DancePartyGrid" Grid.Row="3">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="DancePartyButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="DancePartyImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-
-
-
-                <!--BrainTumbler-->
-                <Grid x:Name="BrainTumblerGrid" Grid.Row="4">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="BrainTumblerButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="BrainTumblerImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-
-                <!--Lungfishopolis-->
-                <Grid x:Name="LungfishopolisGrid" Grid.Row="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="LungfishopolisButton" Background="Transparent"  Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="LungfishopolisImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-
-
-
-            </Grid>
-
-            <Grid Grid.Column="1">
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-
-                <!--Thorney Towers Asylum-->
-                <Grid x:Name="AsylumGrid" Grid.Row="0">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="AsylumButton" Background="Transparent"  Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="ThorneyTowersImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-                <!--MilkMan-->
-                <Grid x:Name="MilkManGrid" Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="MilkManButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="MilkmanConspiracyImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-                <!--Gloria's Theater-->
-                <Grid x:Name="GloriaGrid" Grid.Row="2">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="GloriaButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="GloriasTheaterImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-                <!--Waterloo World-->
-                <Grid x:Name="FredGrid" Grid.Row="3">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="WaterlooButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="WaterlooWorldImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-
-
-
-                <!--Black Velvetopia-->
-                <Grid x:Name="EdgarGrid" Grid.Row="4">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="EdgarButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="BlackVelvetopiaImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-
-                <!--Meat Circus-->
-                <Grid x:Name="KidCoachGrid" Grid.Row="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="KidCoachButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="MeatCircusImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-                <!--Ford/Rank ups-->
-                <Grid x:Name="FordGrid" Grid.Row="6">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1.5*"/>
-                        <ColumnDefinition Width="3.3*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Grid Grid.Column="0">
-                        <Grid.RowDefinitions>
-                            <RowDefinition/>
-                            <RowDefinition/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="3.5*"/>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width=".1*"/>
-                            <ColumnDefinition Width=".3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Button Name ="FordButton" Background="Transparent" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
-                            <DynamicResource ResourceKey="FordImage"/>
-                        </Button>
-
-                    </Grid>
-                </Grid>
-
-
-
-
-            </Grid>
-
-
-
-
-
-
-        </Grid>
-
-        <!--Seed Hash-->
-        <!--<Grid Grid.Row="2">
-            <Viewbox Grid.Row="0" Grid.Column="0">
-                <Label Name="HashText" Foreground="White" HorizontalAlignment="Center" FontSize="1" Padding="2" Content="Seed Hash: F448wUx4F7CaXSN2"/>
-            </Viewbox>
-        </Grid>-->
-
-        <!--Hints-->
-        <!--<Grid Grid.Row="3">
-            <Viewbox Grid.Row="0" Grid.Column="0">
-                <Label Name="HintText" Foreground="White" HorizontalAlignment="Center" FontSize="1" Padding="2" Content="[LUNGFISH CALL] can be found at:
-[CAMA]
-"/>
-            </Viewbox>
-        </Grid>-->
-
-        <!--Item Pool-->
-        <Grid Grid.Row="4" Name="ItemPool">
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-
-
-
-            <!-- Row 1 -->
-            <Grid Grid.Row="0" Name="MeritBadgeRow">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-
-                </Grid.ColumnDefinitions>
-
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="MarksmanshipImage" />
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="LevitationImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="ShieldImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PyrokinesisImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="TelekinesisImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="InvisibilityImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="ClairvoyanceImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="ConfusionImage"/>
-                </Button>
-
-
-            </Grid>
-
-            <Grid Grid.Row="1" Name="ScavengerHuntRow1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-
-                </Grid.ColumnDefinitions>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="AcornImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="DinoboneImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="DiversehelmetImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="EagleclawImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="EggImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="FossilImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="GlasseyeImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="GolddoubbloonImage"/>
-                </Button>
-
-            </Grid>
-
-            <Grid Grid.Row="2" Name="ScavengerHuntRow2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="IdolImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="OldskullImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PipeImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PiratescopeImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PsychocomicImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="SandwichImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="VoodoodollImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="WatchImage"/>
-                </Button>
-
-            </Grid>
-
-            <Grid Grid.Row="3" Name="BrainHuntRow1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidDogenImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidBennyImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidElkaImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidKittyImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidChloeImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidFrankeImage"/>
-                </Button>
-
-
-
-            </Grid>
-
-            <Grid Grid.Row="4" Name="BrainHuntRow2">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidJTImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidQuentinImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidVernonImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidMilkaImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidCrystalImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidClemImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidNilsImage"/>
-                </Button>
-
-
-
-            </Grid>
-
-
-            <Grid Grid.Row="5" Name="BrainHuntRow3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidMaloofImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidMikhailImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidPhoebeImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidEltonImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1" Margin="0,0,0,2">
-                    <DynamicResource ResourceKey="BrainPolaroidChopsImage"/>
-                </Button>
-
-            </Grid>
-
-            <Grid Grid.Row="6" Name="RealWorldKeysRow">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="ButtonImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="LungfishCallImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="DowsingRodImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="CobwebDusterImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PokeylopeCakeImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="LobotoPortraitImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="GloriaTrophyImage"/>
-                </Button>
-
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="StraightJacketImage"/>
-                </Button>
-
-
-            </Grid>
-
-
-            <Grid Grid.Row="7" Name="MilkmanRow1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="SignImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="FlowersImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="CrowfeatherImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="ClippersImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PilotHelmetImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PhoneImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="PlungerImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="RifleImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="8" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="RollingPinImage"/>
-                </Button>
-
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="9" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="WateringCanImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="10" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="GirlScoutCraftImage"/>
-                </Button>
-
-
-            </Grid>
-
-            <Grid Grid.Row="8" Name="GloriaWaterlooRow">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="HagathaScriptImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="KnightofJoyScriptImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="MailboatScriptImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="CandleImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="MegaphoneImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="FredsNoteImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="6" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="CoinImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="7" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="GunImage"/>
-                </Button>
-
-            </Grid>
-
-            <Grid Grid.Row="9" Name="VelvetopiaRow1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="0" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="ArchwayPaintingImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="1" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="LadderPaintingImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="2" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="WindowPaintingImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="3" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="RosePaintingImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="4" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="VinePaintingImage"/>
-                </Button>
-
-                <Button Click="Item_Click" Background="Transparent" Grid.Column="5" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="1" Grid.ColumnSpan="1">
-                    <DynamicResource ResourceKey="RoseImage"/>
-                </Button>
-
-
-            </Grid>
-
-
-
-        </Grid>
-
-        <!--Seed Settings-->
-        <!--<Grid Grid.Row="5">
-            <Viewbox Grid.Row="0" Grid.Column="0">
-                <Label Name="Settings" Foreground="White" HorizontalAlignment="Center" FontSize="3" Padding="2" Content="Settings: ✔ ✔ ✔"/>
-            </Viewbox>
-        </Grid>-->
-
-
-    </Grid>
+        </Canvas>
+    </DockPanel>
 </Window>
