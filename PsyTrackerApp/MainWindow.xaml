@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:PsyTrackerApp"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        KeyDown="Window_KeyDown"
         Closing="Window_Closing"
         LocationChanged="Window_LocationChanged"
         Title="PsyTracker" Height="880" Width="570">

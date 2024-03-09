@@ -26,7 +26,7 @@ namespace PsyTrackerApp
         {
             InitializeComponent();
         }
-        
+
         //Adorner subclass specific to this control
         private class ItemAdorner : Adorner
         {
@@ -94,45 +94,45 @@ namespace PsyTrackerApp
 
             if (data.selected != null)
             {
-                bool isreport = false;
+                //    bool isreport = false;
 
-                // item is a report
-                if (data.hintsLoaded && (int)GetValue(Grid.RowProperty) == 0)
-                {
-                    int index = (int)GetValue(Grid.ColumnProperty);
+                //    // item is a report
+                //    if (data.hintsLoaded && (int)GetValue(Grid.RowProperty) == 0)
+                //    {
+                //        int index = (int)GetValue(Grid.ColumnProperty);
 
-                    if (data.reportAttempts[index] == 0)
-                        return;
+                //        if (data.reportAttempts[index] == 0)
+                //            return;
 
-                    if (data.reportLocations[index].Replace(" ", "") == data.selected.Name)
-                    {
-                        window.SetHintText(data.reportInformation[index].Item1 + " has " + data.reportInformation[index].Item2 + " important checks.");
-                        data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail0");
-                        data.reportAttempts[index] = 3;
-                        isreport = true;
+                //    if (data.reportLocations[index].Replace(" ", "") == data.selected.Name)
+                //    {
+                //        window.SetHintText(data.reportInformation[index].Item1 + " has " + data.reportInformation[index].Item2 + " important checks.");
+                //        data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail0");
+                //        data.reportAttempts[index] = 3;
+                //        isreport = true;
 
-                        for (int i = 0; i < data.Hints.Count; ++i)
-                        {
-                            if (data.Worlds[i].Name == data.reportInformation[index].Item1.Replace(" ", ""))
-                                ((MainWindow)Application.Current.MainWindow).SetReportValue(data.Hints[i], data.reportInformation[index].Item2 + 1);
-                        }
-                    }
-                    else
-                    {
-                        data.reportAttempts[index]--;
-                        if (data.reportAttempts[index] == 0)
-                            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail3");
-                        else if (data.reportAttempts[index] == 1)
-                            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail2");
-                        else if (data.reportAttempts[index] == 2)
-                            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail1");
+                //        for (int i = 0; i < data.Hints.Count; ++i)
+                //        {
+                //            if (data.Worlds[i].Name == data.reportInformation[index].Item1.Replace(" ", ""))
+                //                ((MainWindow)Application.Current.MainWindow).SetReportValue(data.Hints[i], data.reportInformation[index].Item2 + 1);
+                //        }
+                //    }
+                //    else
+                //    {
+                //        data.reportAttempts[index]--;
+                //        if (data.reportAttempts[index] == 0)
+                //            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail3");
+                //        else if (data.reportAttempts[index] == 1)
+                //            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail2");
+                //        else if (data.reportAttempts[index] == 2)
+                //            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail1");
 
-                        return;
-                    }
-                }
+                //        return;
+                //    }
+                //}
 
-                if (isreport == false)
-                    window.SetHintText("");
+                //if (isreport == false)
+                //    window.SetHintText("");
 
                 ((MainWindow)Application.Current.MainWindow).ItemPool.Children.Remove(this);
 
@@ -145,28 +145,28 @@ namespace PsyTrackerApp
                     }
                 }
 
-                ((MainWindow)Application.Current.MainWindow).IncrementCollected();
+                //((MainWindow)Application.Current.MainWindow).IncrementCollected();
 
                 MouseDoubleClick -= Item_Click;
                 MouseDown += Item_Return;
 
                 MouseMove -= Item_MouseMove;
 
-                if (isreport)
-                {
-                    MouseEnter += Report_Hover;
-                }
+                //if (isreport)
+                //{
+                //    MouseEnter += Report_Hover;
+                //}
             }
         }
 
-        public void Report_Hover(object sender, RoutedEventArgs e)
-        {
-            Data data = MainWindow.data;
-            MainWindow window = ((MainWindow)Application.Current.MainWindow);
-            int index = (int)GetValue(Grid.ColumnProperty);
+        //         public void Report_Hover(object sender, RoutedEventArgs e)
+        // {
+        //     Data data = MainWindow.data;
+        //     MainWindow window = ((MainWindow)Application.Current.MainWindow);
+        //     int index = (int)GetValue(Grid.ColumnProperty);
 
-            window.SetHintText(data.reportInformation[index].Item1 + " has " + data.reportInformation[index].Item2 + " important checks.");
-        }
+        //     window.SetHintText(data.reportInformation[index].Item1 + " has " + data.reportInformation[index].Item2 + " important checks.");
+        // }
 
         public void Item_Return(object sender, RoutedEventArgs e)
         {
@@ -182,14 +182,14 @@ namespace PsyTrackerApp
 
                 ((MainWindow)Application.Current.MainWindow).ItemPool.Children.Add(this);
 
-                ((MainWindow)Application.Current.MainWindow).DecrementCollected();
+                //((MainWindow)Application.Current.MainWindow).DecrementCollected();
 
                 MouseDown -= Item_Return;
 
                 MouseDoubleClick += Item_Click;
                 MouseMove += Item_MouseMove;
 
-                MouseEnter -= Report_Hover;
+                //MouseEnter -= Report_Hover;
             }
         }
 
