@@ -31,9 +31,10 @@
 
         <Canvas Name="Window" Background="#303030">
             <StackPanel>
-                <StackPanel Orientation="Horizontal" Height="630">
+                <StackPanel Orientation="Horizontal" Height="430">
 
-                    <StackPanel Height="630" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel Height="430" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    
                         <StackPanel Orientation="Horizontal" Width="270">
                             <StackPanel>
                                 <Button Name ="WhisperingRock" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
@@ -116,7 +117,7 @@
 
             <StackPanel>
 
-                        <StackPanel Height="590" Width="280" VerticalAlignment="Top" HorizontalAlignment="Right">
+                        <StackPanel Height="430" Width="280" VerticalAlignment="Top" HorizontalAlignment="Right">
 
                             <StackPanel Orientation="Horizontal">
                                 <StackPanel>
@@ -185,13 +186,16 @@
                             </StackPanel>
                             </StackPanel>
 
-                            <Grid Name="ItemPool" Height="160" Width="550" >
+                            <Grid Name="ItemPool" Height="320" Width="550" >
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
                                     <RowDefinition />
                                     <RowDefinition />
                                     <RowDefinition />
-                                </Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                    <RowDefinition />
+                    </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition />
                                     <ColumnDefinition />
@@ -311,7 +315,7 @@
                                     <DynamicResource ResourceKey="BrainPolaroidMikhailImage"/>
                                 </local:Item>
 
-                                <local:Item x:Name="Milka" Grid.Row="2" Grid.Column="0">
+                                <local:Item x:Name="Milka" Grid.Row="1" Grid.Column="12">
                                     <DynamicResource ResourceKey="BrainPolaroidMilkaImage"/>
                                 </local:Item>
 
@@ -416,8 +420,56 @@
                                 <local:Item x:Name="PokeylopeCake" Grid.Row="3" Grid.Column="12">
                                     <DynamicResource ResourceKey="PokeylopeCakeImage"/>
                                 </local:Item>
-                            </Grid>
-                    </StackPanel>
+
+                    <!--Milkman Locks-->
+                    <local:Item x:Name="Crowfeather" Grid.Row="4" Grid.Column="0">
+                        <DynamicResource ResourceKey="CrowfeatherImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Clippers" Grid.Row="4" Grid.Column="1">
+                        <DynamicResource ResourceKey="ClippersImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Flowers" Grid.Row="4" Grid.Column="2">
+                        <DynamicResource ResourceKey="FlowersImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="GirlScoutCraft" Grid.Row="4" Grid.Column="3">
+                        <DynamicResource ResourceKey="GirlScoutCraftImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="PilotHelmet" Grid.Row="4" Grid.Column="4">
+                        <DynamicResource ResourceKey="PilotHelmetImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Phone" Grid.Row="4" Grid.Column="5">
+                        <DynamicResource ResourceKey="PhoneImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Plunger" Grid.Row="4" Grid.Column="6">
+                        <DynamicResource ResourceKey="PlungerImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Rifle" Grid.Row="4" Grid.Column="7">
+                        <DynamicResource ResourceKey="RifleImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="RollingPin" Grid.Row="4" Grid.Column="8">
+                        <DynamicResource ResourceKey="RollingPinImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Sign" Grid.Row="4" Grid.Column="9">
+                        <DynamicResource ResourceKey="SignImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="WateringCan" Grid.Row="4" Grid.Column="10">
+                        <DynamicResource ResourceKey="WateringCanImage"/>
+                    </local:Item>
+
+
+
+                </Grid>
+               </StackPanel>
 
         </Canvas>
     </DockPanel>
