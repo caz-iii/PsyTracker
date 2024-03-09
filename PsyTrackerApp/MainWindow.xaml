@@ -186,7 +186,7 @@
                             </StackPanel>
                             </StackPanel>
 
-                            <Grid Name="ItemPool" Height="320" Width="550" >
+                            <Grid Name="ItemPool" Height="320" Width="570" >
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
                                     <RowDefinition />
@@ -400,7 +400,7 @@
                                     <DynamicResource ResourceKey="WatchImage"/>
                                 </local:Item>
 
-                                <!--Physical World Locks-->
+                                <!--Physical World Keys-->
                                 <local:Item x:Name="Button" Grid.Row="3" Grid.Column="8">
                                     <DynamicResource ResourceKey="ButtonImage"/>
                                 </local:Item>
@@ -421,7 +421,7 @@
                                     <DynamicResource ResourceKey="PokeylopeCakeImage"/>
                                 </local:Item>
 
-                    <!--Milkman Locks-->
+                    <!--Milkman Keys-->
                     <local:Item x:Name="Crowfeather" Grid.Row="4" Grid.Column="0">
                         <DynamicResource ResourceKey="CrowfeatherImage"/>
                     </local:Item>
@@ -465,7 +465,66 @@
                     <local:Item x:Name="WateringCan" Grid.Row="4" Grid.Column="10">
                         <DynamicResource ResourceKey="WateringCanImage"/>
                     </local:Item>
+                                
+                    <!--Gloria Keys-->
+                    <local:Item x:Name="HagathaScript" Grid.Row="5" Grid.Column="0">
+                        <DynamicResource ResourceKey="HagathaScriptImage"/>
+                    </local:Item>
 
+                    <local:Item x:Name="KnightofJoyScript" Grid.Row="5" Grid.Column="1">
+                        <DynamicResource ResourceKey="KnightofJoyScriptImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="MailboatScript" Grid.Row="5" Grid.Column="2">
+                        <DynamicResource ResourceKey="MailboatScriptImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Candle" Grid.Row="5" Grid.Column="3">
+                        <DynamicResource ResourceKey="CandleImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Megaphone" Grid.Row="5" Grid.Column="4">
+                        <DynamicResource ResourceKey="MegaphoneImage"/>
+                    </local:Item>
+                                
+                                
+                    <!--Waterloo Keys-->
+                    <local:Item x:Name="FredsNote" Grid.Row="5" Grid.Column="5">
+                        <DynamicResource ResourceKey="FredsNoteImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Gun" Grid.Row="5" Grid.Column="6">
+                        <DynamicResource ResourceKey="GunImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="Coin" Grid.Row="5" Grid.Column="7">
+                        <DynamicResource ResourceKey="CoinImage"/>
+                    </local:Item>
+
+                    <!--Black Velvetopia Key-->
+                    <local:Item x:Name="Rose" Grid.Row="5" Grid.Column="8">
+                        <DynamicResource ResourceKey="RoseImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="RosePainting" Grid.Row="5" Grid.Column="9">
+                        <DynamicResource ResourceKey="RosePaintingImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="ArchwayPainting" Grid.Row="5" Grid.Column="10">
+                        <DynamicResource ResourceKey="ArchwayPaintingImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="LadderPainting" Grid.Row="5" Grid.Column="11">
+                        <DynamicResource ResourceKey="LadderPaintingImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="VinePainting" Grid.Row="5" Grid.Column="12">
+                        <DynamicResource ResourceKey="VinePaintingImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="WindowPainting" Grid.Row="6" Grid.Column="0">
+                        <DynamicResource ResourceKey="WindowPaintingImage"/>
+                    </local:Item>
 
 
                 </Grid>
