@@ -116,7 +116,7 @@
 
             <StackPanel>
 
-                        <StackPanel Height="590" Width="280" VerticalAlignment="Top" HorizontalAlignment="Left">
+                        <StackPanel Height="590" Width="280" VerticalAlignment="Top" HorizontalAlignment="Right">
 
                             <StackPanel Orientation="Horizontal">
                                 <StackPanel>
