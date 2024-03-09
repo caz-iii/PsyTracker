@@ -107,6 +107,7 @@
     <None Remove="images\tags\pursetag.png" />
     <None Remove="images\tags\steamertrunktag.png" />
     <None Remove="images\tags\suitcasetag.png" />
+    <None Remove="images\VerticalBarWhite.png" />
     <None Remove="images\victory-conditions\beatalllevels.png" />
     <None Remove="images\victory-conditions\beatoleander.png" />
     <None Remove="images\victory-conditions\brainhunt.png" />
@@ -429,6 +430,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\tags\suitcasetag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\VerticalBarWhite.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\victory-conditions\beatalllevels.png">
