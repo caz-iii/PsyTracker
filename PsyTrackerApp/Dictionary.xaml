@@ -110,7 +110,7 @@
     <Image x:Key="CrowfeatherImage" Source="images\keys\milkman\crowfeather.png" x:Shared="False"/>
     <Image x:Key="ClippersImage" Source="images\keys\milkman\mm_clippers.png" x:Shared="False"/>
     <Image x:Key="FlowersImage" Source="images\keys\milkman\mm_flowers.png" x:Shared="False"/>
-    <Image x:Key="GirlScoutCraftImage" Source="images\keys\milkman\mm_godseye.png" x:Shared="False"/>
+    <Image x:Key="GodsEyeImage" Source="images\keys\milkman\mm_godseye.png" x:Shared="False"/>
     <Image x:Key="PilotHelmetImage" Source="images\keys\milkman\mm_helihelmet.png" x:Shared="False"/>
     <Image x:Key="PhoneImage" Source="images\keys\milkman\mm_phone.png" x:Shared="False"/>
     <Image x:Key="PlungerImage" Source="images\keys\milkman\mm_plunger.png" x:Shared="False"/>

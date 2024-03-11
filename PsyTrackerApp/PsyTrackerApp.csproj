@@ -107,6 +107,7 @@
     <None Remove="images\tags\pursetag.png" />
     <None Remove="images\tags\steamertrunktag.png" />
     <None Remove="images\tags\suitcasetag.png" />
+    <None Remove="images\VerticalBarWhite.png" />
     <None Remove="images\victory-conditions\beatalllevels.png" />
     <None Remove="images\victory-conditions\beatoleander.png" />
     <None Remove="images\victory-conditions\brainhunt.png" />
@@ -431,6 +432,9 @@
     <Resource Include="images\tags\suitcasetag.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="images\VerticalBarWhite.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\victory-conditions\beatalllevels.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -485,6 +489,27 @@
     <Resource Include="images\worlds\sasha.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </ApplicationDefinition>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Dictionary.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Update="Item.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+    <Page Update="WorldGrid.xaml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
   </ItemGroup>
 
 </Project>
