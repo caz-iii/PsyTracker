@@ -503,8 +503,16 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
+                    <!-- Merit Badges -->
                     <local:Item x:Name="MentalMagnet" Grid.Column="0">
                         <DynamicResource ResourceKey="MentalMagnetImage"/>
                     </local:Item>
@@ -557,200 +565,41 @@
                         <DynamicResource ResourceKey="MarksmanshipImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Pyrokinesis1" Grid.Row="1" Grid.Column="0">
+                    <local:Item x:Name="Pyrokinesis1" Grid.Column="13">
                         <DynamicResource ResourceKey="PyrokinesisImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Pyrokinesis2" Grid.Row="1" Grid.Column="1">
+                    <local:Item x:Name="Pyrokinesis2" Grid.Column="14">
                         <DynamicResource ResourceKey="PyrokinesisImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Shield1" Grid.Row="1" Grid.Column="2">
+                    <local:Item x:Name="Shield1" Grid.Column="15">
                         <DynamicResource ResourceKey="ShieldImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Shield2" Grid.Row="1" Grid.Column="3">
+                    <local:Item x:Name="Shield2" Grid.Column="16">
                         <DynamicResource ResourceKey="ShieldImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Shield3" Grid.Row="1" Grid.Column="4">
+                    <local:Item x:Name="Shield3" Grid.Column="17">
                         <DynamicResource ResourceKey="ShieldImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Telekinesis1" Grid.Row="1" Grid.Column="5">
+                    <local:Item x:Name="Telekinesis1" Grid.Column="18">
                         <DynamicResource ResourceKey="TelekinesisImage"/>
                     </local:Item>
+                   
+                    <local:Item x:Name="Telekinesis2" Grid.Column="19">
+                            <DynamicResource ResourceKey="TelekinesisImage"/>
+                        </local:Item>
 
+                    </Grid>
 
-                    <local:Item x:Name="Telekinesis2" Grid.Row="1" Grid.Column="6">
-                        <DynamicResource ResourceKey="TelekinesisImage"/>
-                    </local:Item>
-
-
-                </Grid>
-
-
-
-
-
-
-                </Grid>
-
-            <!--<StackPanel>
-                <StackPanel Orientation="Horizontal" Height="630">
-
-                    <StackPanel Height="630" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top">
-
-                        <StackPanel Orientation="Horizontal" Width="270">
-                            <StackPanel>
-                                
-                            </StackPanel>
-                            
-                            
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal" Width="270">
-                            <StackPanel>
-                                
-                            </StackPanel>
-                            <Image Name="BasicBrainingBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                            
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal" Width="270">
-                            <StackPanel>
-                                
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal" Width="270">
-                            <StackPanel>
-                                <Button Name="DanceParty" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                    <DynamicResource ResourceKey="DancePartyImage"/>
-                                </Button>
-                                --><!-- <Image Name="DancePartyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                            </StackPanel>
-                            <Image Name="DancePartyBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                            <local:WorldGrid x:Name="DancePartyGrid" Height="40" Width="200"/>
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal" Width="270">
-                            <StackPanel>
-                                <Button Name="BrainTumbler" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                    <DynamicResource ResourceKey="BrainTumblerImage"/>
-                                </Button>
-                                --><!-- <Image Name="BrainTumblerHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                            </StackPanel>
-                            <Image Name="BrainTumblerBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                            <local:WorldGrid x:Name="BrainTumblerGrid" Height="40" Width="200"/>
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal" Width="270">
-                            <StackPanel>
-                                <Button Name="Lungfishopolis" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                    <DynamicResource ResourceKey="LungfishopolisImage"/>
-                                </Button>
-                                --><!-- <Image Name="LungfishopolisHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                            </StackPanel>
-                            <Image Name="LungfishopolisBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                            <local:WorldGrid x:Name="LungfishopolisGrid" Height="40" Width="200"/>
-                        </StackPanel>
-
-                        <StackPanel Orientation="Horizontal">
-                            <StackPanel>
-                                <Button Name="Ford" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="45" Background="#303030" PreviewMouseDown="OnMouseDown" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                    <DynamicResource ResourceKey="FordImage"/>
-                                </Button>
-                            </StackPanel>
-                            <Image Name="FordBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                            <local:WorldGrid x:Name="FordGrid" Height="40" Width="200"/>
-                        </StackPanel>
-
-                    </StackPanel>
-                </StackPanel>
-            </StackPanel>
-
-            <StackPanel>
-
-                <StackPanel Height="630" Width="280" VerticalAlignment="Top" HorizontalAlignment="Right">
-
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel>
-                            <Button Name ="ThorneyTowers" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                <DynamicResource ResourceKey="ThorneyTowersImage"/>
-                            </Button>
-                            --><!-- <Image Name="ThorneyTowersHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                        </StackPanel>
-                        <Image Name="ThorneyTowersBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                        <local:WorldGrid x:Name="ThorneyTowersGrid" Height="40" Width="200"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel>
-                            <Button Name="MilkmanConspiracy" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                <DynamicResource ResourceKey="MilkmanConspiracyImage"/>
-                            </Button>
-                            --><!-- <Image Name="MilkmanConspiracyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                        </StackPanel>
-                        <Image Name="MilkmanConspiracyBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                        <local:WorldGrid x:Name="MilkmanConspiracyGrid" Height="40" Width="200"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel>
-                            <Button Name="GloriasTheater" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                <DynamicResource ResourceKey="GloriasTheaterImage"/>
-                            </Button>
-                            --><!-- <Image Name="GloriasTheaterHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                        </StackPanel>
-                        <Image Name="GloriasTheaterBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                        <local:WorldGrid x:Name="GloriasTheaterGrid" Height="40" Width="200"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel>
-                            <Button Name="WaterlooWorld" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                <DynamicResource ResourceKey="WaterlooWorldImage"/>
-                            </Button>
-                            --><!-- <Image Name="WaterlooWorldHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                        </StackPanel>
-                        <Image Name="WaterlooWorldBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                        <local:WorldGrid x:Name="WaterlooWorldGrid" Height="40" Width="200"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel>
-                            <Button Name="BlackVelvetopia" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                <DynamicResource ResourceKey="BlackVelvetopiaImage"/>
-                            </Button>
-                            --><!-- <Image Name="BlackVelvetopiaHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                        </StackPanel>
-                        <Image Name="BlackVelvetopiaBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                        <local:WorldGrid x:Name="BlackVelvetopiaGrid" Height="40" Width="200"/>
-                    </StackPanel>
-
-                    <StackPanel Orientation="Horizontal">
-                        <StackPanel>
-                            <Button Name="MeatCircus" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                <DynamicResource ResourceKey="MeatCircusImage"/>
-                            </Button>
-                            --><!-- <Image Name="MeatCircusHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
-                        </StackPanel>
-                        <Image Name="MeatCircusBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                        <local:WorldGrid x:Name="MeatCircusGrid" Height="40" Width="200"/>
-                    </StackPanel>
-                </StackPanel>
-
-                <Grid Name="ItemPool" Height="175" Width="550" >
-                    <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-                        <RowDefinition />
-
-                    </Grid.RowDefinitions>
+                <!-- Row 2 -->
+                <Grid Grid.Row="1">
                     <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
@@ -767,315 +616,293 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    --><!--Merit Badges--><!--
-                    <local:Item x:Name="MentalMagnet" Grid.Row="0" Grid.Column="0">
-                        <DynamicResource ResourceKey="MentalMagnetImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Clairvoyance1" Grid.Row="0" Grid.Column="1">
-                        <DynamicResource ResourceKey="ClairvoyanceImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Clairvoyance2" Grid.Row="0" Grid.Column="2">
-                        <DynamicResource ResourceKey="ClairvoyanceImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Confusion1" Grid.Row="0" Grid.Column="3">
-                        <DynamicResource ResourceKey="ConfusionImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Confusion2" Grid.Row="0" Grid.Column="4">
-                        <DynamicResource ResourceKey="ConfusionImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Invisibility1" Grid.Row="0" Grid.Column="5">
-                        <DynamicResource ResourceKey="InvisibilityImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Invisibility2" Grid.Row="0" Grid.Column="6">
-                        <DynamicResource ResourceKey="InvisibilityImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Levitation1" Grid.Row="0" Grid.Column="7">
-                        <DynamicResource ResourceKey="LevitationImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Levitation2" Grid.Row="0" Grid.Column="8">
-                        <DynamicResource ResourceKey="LevitationImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Levitation3" Grid.Row="0" Grid.Column="9">
-                        <DynamicResource ResourceKey="LevitationImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Marksmanship1" Grid.Row="0" Grid.Column="10">
-                        <DynamicResource ResourceKey="MarksmanshipImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Marksmanship2" Grid.Row="0" Grid.Column="11">
-                        <DynamicResource ResourceKey="MarksmanshipImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Marksmanship3" Grid.Row="0" Grid.Column="12">
-                        <DynamicResource ResourceKey="MarksmanshipImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Pyrokinesis1" Grid.Row="1" Grid.Column="0">
-                        <DynamicResource ResourceKey="PyrokinesisImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Pyrokinesis2" Grid.Row="1" Grid.Column="1">
-                        <DynamicResource ResourceKey="PyrokinesisImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Shield1" Grid.Row="1" Grid.Column="2">
-                        <DynamicResource ResourceKey="ShieldImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Shield2" Grid.Row="1" Grid.Column="3">
-                        <DynamicResource ResourceKey="ShieldImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Shield3" Grid.Row="1" Grid.Column="4">
-                        <DynamicResource ResourceKey="ShieldImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="Telekinesis1" Grid.Row="1" Grid.Column="5">
-                        <DynamicResource ResourceKey="TelekinesisImage"/>
-                    </local:Item>
-
-
-                    <local:Item x:Name="Telekinesis2" Grid.Row="1" Grid.Column="6">
-                        <DynamicResource ResourceKey="TelekinesisImage"/>
-                    </local:Item>
-
-                    --><!--Scavenger Hunt--><!--
-                    <local:Item x:Name="Acorn" Grid.Row="2" Grid.Column="0">
+                    <!-- Scavenger Hunt -->
+                    <local:Item x:Name="Acorn" Grid.Column="0">
                         <DynamicResource ResourceKey="AcornImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Dinobone" Grid.Row="2" Grid.Column="1">
+                    <local:Item x:Name="Dinobone" Grid.Column="1">
                         <DynamicResource ResourceKey="DinoboneImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Diversehelmet" Grid.Row="2" Grid.Column="2">
+                    <local:Item x:Name="Diversehelmet" Grid.Column="2">
                         <DynamicResource ResourceKey="DiversehelmetImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Eagleclaw" Grid.Row="2" Grid.Column="3">
+                    <local:Item x:Name="Eagleclaw" Grid.Column="3">
                         <DynamicResource ResourceKey="EagleclawImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Egg" Grid.Row="2" Grid.Column="4">
+                    <local:Item x:Name="Egg" Grid.Column="4">
                         <DynamicResource ResourceKey="EggImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Fossil" Grid.Row="2" Grid.Column="5">
+                    <local:Item x:Name="Fossil" Grid.Column="5">
                         <DynamicResource ResourceKey="FossilImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Glasseye" Grid.Row="2" Grid.Column="6">
+                    <local:Item x:Name="Glasseye" Grid.Column="6">
                         <DynamicResource ResourceKey="GlasseyeImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Golddoubbloon" Grid.Row="2" Grid.Column="7">
+                    <local:Item x:Name="Golddoubbloon" Grid.Column="7">
                         <DynamicResource ResourceKey="GolddoubbloonImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Idol" Grid.Row="2" Grid.Column="8">
+                    <local:Item x:Name="Idol" Grid.Column="8">
                         <DynamicResource ResourceKey="IdolImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Oldskull" Grid.Row="2" Grid.Column="9">
+                    <local:Item x:Name="Oldskull" Grid.Column="9">
                         <DynamicResource ResourceKey="OldskullImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Pipe" Grid.Row="2" Grid.Column="10">
+                    <local:Item x:Name="Pipe" Grid.Column="10">
                         <DynamicResource ResourceKey="PipeImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Piratescope" Grid.Row="2" Grid.Column="11">
+                    <local:Item x:Name="Piratescope" Grid.Column="11">
                         <DynamicResource ResourceKey="PiratescopeImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Psychocomic" Grid.Row="2" Grid.Column="12">
+                    <local:Item x:Name="Psychocomic" Grid.Column="12">
                         <DynamicResource ResourceKey="PsychocomicImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Sandwich" Grid.Row="2" Grid.Column="13">
+                    <local:Item x:Name="Sandwich" Grid.Column="13">
                         <DynamicResource ResourceKey="SandwichImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Voodoodoll" Grid.Row="3" Grid.Column="0">
+                    <local:Item x:Name="Voodoodoll" Grid.Column="14">
                         <DynamicResource ResourceKey="VoodoodollImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Watch" Grid.Row="3" Grid.Column="1">
+                    <local:Item x:Name="Watch" Grid.Column="15">
                         <DynamicResource ResourceKey="WatchImage"/>
                     </local:Item>
+                </Grid>
 
+                <!-- Row 3 -->
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
 
-                    --><!--Brain Hunt--><!--
-                    <local:Item x:Name="Bobby" Grid.Row="4" Grid.Column="0">
+                    <!-- Brain Hunt -->
+                    <local:Item x:Name="Bobby" Grid.Column="0">
                         <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Dogen" Grid.Row="4" Grid.Column="1">
+                    <local:Item x:Name="Dogen" Grid.Column="1">
                         <DynamicResource ResourceKey="BrainPolaroidDogenImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Benny" Grid.Row="4" Grid.Column="2">
+                    <local:Item x:Name="Benny" Grid.Column="2">
                         <DynamicResource ResourceKey="BrainPolaroidBennyImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Elka" Grid.Row="4" Grid.Column="3">
+                    <local:Item x:Name="Elka" Grid.Column="3">
                         <DynamicResource ResourceKey="BrainPolaroidElkaImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Kitty" Grid.Row="4" Grid.Column="4">
+                    <local:Item x:Name="Kitty" Grid.Column="4">
                         <DynamicResource ResourceKey="BrainPolaroidKittyImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Chloe" Grid.Row="4" Grid.Column="5">
+                    <local:Item x:Name="Chloe" Grid.Column="5">
                         <DynamicResource ResourceKey="BrainPolaroidChloeImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Franke" Grid.Row="4" Grid.Column="6">
+                    <local:Item x:Name="Franke" Grid.Column="6">
                         <DynamicResource ResourceKey="BrainPolaroidFrankeImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="JT" Grid.Row="4" Grid.Column="7">
+                    <local:Item x:Name="JT" Grid.Column="7">
                         <DynamicResource ResourceKey="BrainPolaroidJTImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Quentin" Grid.Row="4" Grid.Column="8">
+                    <local:Item x:Name="Quentin" Grid.Column="8">
                         <DynamicResource ResourceKey="BrainPolaroidQuentinImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Vernon" Grid.Row="4" Grid.Column="9">
+                    <local:Item x:Name="Vernon" Grid.Column="9">
                         <DynamicResource ResourceKey="BrainPolaroidVernonImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Milka" Grid.Row="4" Grid.Column="10">
+                    <local:Item x:Name="Milka" Grid.Column="10">
                         <DynamicResource ResourceKey="BrainPolaroidMilkaImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Crystal" Grid.Row="4" Grid.Column="11">
+                    <local:Item x:Name="Crystal" Grid.Column="11">
                         <DynamicResource ResourceKey="BrainPolaroidCrystalImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Clem" Grid.Row="4" Grid.Column="12">
+                    <local:Item x:Name="Clem" Grid.Column="12">
                         <DynamicResource ResourceKey="BrainPolaroidClemImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Nils" Grid.Row="4" Grid.Column="13">
+                    <local:Item x:Name="Nils" Grid.Column="13">
                         <DynamicResource ResourceKey="BrainPolaroidNilsImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Maloof" Grid.Row="5" Grid.Column="0">
+                    <local:Item x:Name="Maloof" Grid.Column="14">
                         <DynamicResource ResourceKey="BrainPolaroidMaloofImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Mikhail" Grid.Row="5" Grid.Column="1">
+                    <local:Item x:Name="Mikhail" Grid.Column="15">
                         <DynamicResource ResourceKey="BrainPolaroidMikhailImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Phoebe" Grid.Row="5" Grid.Column="2">
+                    <local:Item x:Name="Phoebe" Grid.Column="16">
                         <DynamicResource ResourceKey="BrainPolaroidPhoebeImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Elton" Grid.Row="5" Grid.Column="3">
+                    <local:Item x:Name="Elton" Grid.Column="17">
                         <DynamicResource ResourceKey="BrainPolaroidEltonImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Chops" Grid.Row="5" Grid.Column="4">
+                    <local:Item x:Name="Chops" Grid.Column="18">
                         <DynamicResource ResourceKey="BrainPolaroidChopsImage"/>
                     </local:Item>
 
-                    --><!--Beat Oleander--><!--
-                    <local:Item x:Name="GloriaTrophy" Grid.Row="1" Grid.Column="10">
-                        <DynamicResource ResourceKey="GloriaTrophyImage"/>
-                    </local:Item>
+                </Grid>
 
-                    <local:Item x:Name="LobotoPortrait" Grid.Row="1" Grid.Column="11">
-                        <DynamicResource ResourceKey="LobotoPortraitImage"/>
-                    </local:Item>
+                <!-- Row 4 -->
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Name="Ex_UnknownDisk" Width="1*"/>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition Name="Pr_PromiseCharm"/>
+                    </Grid.ColumnDefinitions>
 
-                    <local:Item x:Name="StraightJacket" Grid.Row="1" Grid.Column="12">
-                        <DynamicResource ResourceKey="StraightJacketImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="PokeylopeCake" Grid.Row="1" Grid.Column="13">
-                        <DynamicResource ResourceKey="PokeylopeCakeImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="LungfishCall" Grid.Row="1" Grid.Column="8">
-                        <DynamicResource ResourceKey="LungfishCallImage"/>
-                    </local:Item>
-
-                    <local:Item x:Name="CobwebDuster" Grid.Row="1" Grid.Column="9">
-                        <DynamicResource ResourceKey="CobwebDusterImage"/>
-                    </local:Item>
-
-                    --><!--Physical World Keys--><!--
-                    <local:Item x:Name="Button" Grid.Row="1" Grid.Column="7">
+                    <local:Item x:Name="Button" Grid.Column="0">
                         <DynamicResource ResourceKey="ButtonImage"/>
                     </local:Item>
 
-                    --><!--Milkman Keys--><!--
-                    <local:Item x:Name="Crowfeather" Grid.Row="3" Grid.Column="2">
+                    <!-- Beat Oleander -->
+                    <local:Item x:Name="LungfishCall" Grid.Column="1">
+                        <DynamicResource ResourceKey="LungfishCallImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="CobwebDuster" Grid.Column="2">
+                        <DynamicResource ResourceKey="CobwebDusterImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="GloriaTrophy" Grid.Column="3">
+                        <DynamicResource ResourceKey="GloriaTrophyImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="LobotoPortrait" Grid.Column="4">
+                        <DynamicResource ResourceKey="LobotoPortraitImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="StraightJacket" Grid.Column="5">
+                        <DynamicResource ResourceKey="StraightJacketImage"/>
+                    </local:Item>
+
+                    <local:Item x:Name="PokeylopeCake" Grid.Column="6">
+                        <DynamicResource ResourceKey="PokeylopeCakeImage"/>
+                    </local:Item>
+
+                </Grid>
+
+                <!-- Row 5 -->
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- Keys -->
+                    
+                    <!-- Milkman -->
+                    <local:Item x:Name="Crowfeather" Grid.Column="0">
                         <DynamicResource ResourceKey="CrowfeatherImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Clippers" Grid.Row="3" Grid.Column="3">
+                    <local:Item x:Name="Clippers" Grid.Column="1">
                         <DynamicResource ResourceKey="ClippersImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Flowers" Grid.Row="3" Grid.Column="4">
+                    <local:Item x:Name="Flowers" Grid.Column="2">
                         <DynamicResource ResourceKey="FlowersImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Plunger" Grid.Row="3" Grid.Column="5">
+                    <local:Item x:Name="Plunger" Grid.Column="3">
                         <DynamicResource ResourceKey="PlungerImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="RollingPin" Grid.Row="3" Grid.Column="6">
+                    <local:Item x:Name="RollingPin" Grid.Column="4">
                         <DynamicResource ResourceKey="RollingPinImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Sign" Grid.Row="3" Grid.Column="7">
+                    <local:Item x:Name="Sign" Grid.Column="5">
                         <DynamicResource ResourceKey="SignImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="WateringCan" Grid.Row="3" Grid.Column="8">
+                    <local:Item x:Name="WateringCan" Grid.Column="6">
                         <DynamicResource ResourceKey="WateringCanImage"/>
                     </local:Item>
 
-                    --><!--Gloria Keys--><!--
-
-                    <local:Item x:Name="Candle" Grid.Row="3" Grid.Column="9">
+                    <!-- Gloria -->
+                    <local:Item x:Name="Candle" Grid.Column="7">
                         <DynamicResource ResourceKey="CandleImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Megaphone" Grid.Row="3" Grid.Column="10">
+                    <local:Item x:Name="Megaphone" Grid.Column="8">
                         <DynamicResource ResourceKey="MegaphoneImage"/>
                     </local:Item>
 
-                    --><!--Waterloo Keys--><!--
-                    <local:Item x:Name="FredsNote" Grid.Row="3" Grid.Column="11">
+                    <!-- Waterloo -->
+                    <local:Item x:Name="FredsNote" Grid.Column="9">
                         <DynamicResource ResourceKey="FredsNoteImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Musket" Grid.Row="3" Grid.Column="12">
+                    <local:Item x:Name="Musket" Grid.Column="10">
                         <DynamicResource ResourceKey="GunImage"/>
                     </local:Item>
 
-                    <local:Item x:Name="Coin" Grid.Row="3" Grid.Column="13">
+                    <local:Item x:Name="Coin" Grid.Column="11">
                         <DynamicResource ResourceKey="CoinImage"/>
                     </local:Item>
 
                 </Grid>
-            </StackPanel>-->
+
+
+            </Grid>
+
 
         </Grid>
     </DockPanel>
