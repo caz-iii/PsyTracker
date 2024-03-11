@@ -29,32 +29,154 @@
         </Menu>
 
 
-        <Canvas Name="Window" Background="#303030">
-            <StackPanel>
+        <Grid Name="Window" Background="#303030">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="0.9*"/>
+                <RowDefinition Name="FormRow" Height="0*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Whispering Rock Psychic Summer Camp-->
+                    <Grid Name="WhisperingRockTop" Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.5*"/>
+                            <ColumnDefinition Width="3.3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3.5*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width=".1*"/>
+                                <ColumnDefinition Width=".3*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Name ="WhisperingRock" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}"  Grid.RowSpan="2" Grid.ColumnSpan="2">
+                                <DynamicResource ResourceKey="WhisperingRockImage"/>
+                            </Button>
+                            <!-- <Image Name="WhisperingRockHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            <Image Name="WhisperingRockBar" Source="images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="5"/>
+                        </Grid>
+                       
+                        <local:WorldGrid x:Name="WhisperingRockGrid" Grid.Column="1"/>
+
+                    </Grid>
+                    
+                    <!-- Basic Braining-->
+                    <Grid Name="BasicBrainingTop" Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.5*"/>
+                            <ColumnDefinition Width="3.3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3.5*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width=".1*"/>
+                                <ColumnDefinition Width=".3*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button Name="BasicBraining" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}"  Grid.RowSpan="2" Grid.ColumnSpan="2">
+                                <DynamicResource ResourceKey="BasicBrainingImage"/>
+                            </Button>
+                            <!-- <Image Name="BasicBrainingHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            <Image Name="ShootingGalleryBar" Source="images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
+                        </Grid>
+                        <local:WorldGrid x:Name="BasicBrainingGrid" Grid.Column="1"/>
+                    </Grid>
+                    
+                    <!-- Sasha's Shooting Gallery -->
+                    
+                    <!-- Milla's Dance Party -->
+                    
+                    <!-- The Brain Tumbler Experiment -->
+                    
+                    <!-- Lungfishopolis -->
+                    
+                    <!-- Ford's Sanctuary-->
+
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                       
+                    <!-- Thorney Towers Home for the Disturbed -->
+                    
+                    <!-- The Milkman Conspiracy -->
+                    
+                    <!-- Gloria's Theater -->
+                    
+                    <!-- Waterloo World -->
+                    
+                    <!-- Black Velvetopia -->
+                    
+                    
+                    
+                </Grid>
+            </Grid>
+
+
+            <!--<StackPanel>
                 <StackPanel Orientation="Horizontal" Height="630">
 
                     <StackPanel Height="630" Width="280" HorizontalAlignment="Left" VerticalAlignment="Top">
 
                         <StackPanel Orientation="Horizontal" Width="270">
                             <StackPanel>
-                                <Button Name ="WhisperingRock" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                    <DynamicResource ResourceKey="WhisperingRockImage"/>
-                                </Button>
-                                <!-- <Image Name="WhisperingRockHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                
                             </StackPanel>
-                            <Image Name="WhisperingRockBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                            <local:WorldGrid x:Name="WhisperingRockGrid" Height="40" Width="200"/>
+                            
+                            
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Width="270">
                             <StackPanel>
-                                <Button Name="BasicBraining" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
-                                    <DynamicResource ResourceKey="BasicBrainingImage"/>
-                                </Button>
-                                <!-- <Image Name="BasicBrainingHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                
                             </StackPanel>
                             <Image Name="BasicBrainingBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
-                            <local:WorldGrid x:Name="BasicBrainingGrid" Height="40" Width="200"/>
+                            
                         </StackPanel>
 
                         <StackPanel Orientation="Horizontal" Width="270">
@@ -62,9 +184,9 @@
                                 <Button Name="ShootingGallery" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                     <DynamicResource ResourceKey="ShootingGalleryImage"/>
                                 </Button>
-                                <!-- <Image Name="ShootingGalleryHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                --><!-- <Image Name="ShootingGalleryHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                             </StackPanel>
-                            <Image Name="ShootingGalleryBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
+                            
                             <local:WorldGrid x:Name="ShootingGalleryGrid" Height="40" Width="200"/>
                         </StackPanel>
 
@@ -73,7 +195,7 @@
                                 <Button Name="DanceParty" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                     <DynamicResource ResourceKey="DancePartyImage"/>
                                 </Button>
-                                <!-- <Image Name="DancePartyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                --><!-- <Image Name="DancePartyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                             </StackPanel>
                             <Image Name="DancePartyBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                             <local:WorldGrid x:Name="DancePartyGrid" Height="40" Width="200"/>
@@ -84,7 +206,7 @@
                                 <Button Name="BrainTumbler" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                     <DynamicResource ResourceKey="BrainTumblerImage"/>
                                 </Button>
-                                <!-- <Image Name="BrainTumblerHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                --><!-- <Image Name="BrainTumblerHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                             </StackPanel>
                             <Image Name="BrainTumblerBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                             <local:WorldGrid x:Name="BrainTumblerGrid" Height="40" Width="200"/>
@@ -95,7 +217,7 @@
                                 <Button Name="Lungfishopolis" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                     <DynamicResource ResourceKey="LungfishopolisImage"/>
                                 </Button>
-                                <!-- <Image Name="LungfishopolisHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                                --><!-- <Image Name="LungfishopolisHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                             </StackPanel>
                             <Image Name="LungfishopolisBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                             <local:WorldGrid x:Name="LungfishopolisGrid" Height="40" Width="200"/>
@@ -124,7 +246,7 @@
                             <Button Name ="ThorneyTowers" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                 <DynamicResource ResourceKey="ThorneyTowersImage"/>
                             </Button>
-                            <!-- <Image Name="ThorneyTowersHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            --><!-- <Image Name="ThorneyTowersHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                         </StackPanel>
                         <Image Name="ThorneyTowersBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                         <local:WorldGrid x:Name="ThorneyTowersGrid" Height="40" Width="200"/>
@@ -135,7 +257,7 @@
                             <Button Name="MilkmanConspiracy" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                 <DynamicResource ResourceKey="MilkmanConspiracyImage"/>
                             </Button>
-                            <!-- <Image Name="MilkmanConspiracyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            --><!-- <Image Name="MilkmanConspiracyHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                         </StackPanel>
                         <Image Name="MilkmanConspiracyBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                         <local:WorldGrid x:Name="MilkmanConspiracyGrid" Height="40" Width="200"/>
@@ -146,7 +268,7 @@
                             <Button Name="GloriasTheater" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                 <DynamicResource ResourceKey="GloriasTheaterImage"/>
                             </Button>
-                            <!-- <Image Name="GloriasTheaterHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            --><!-- <Image Name="GloriasTheaterHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                         </StackPanel>
                         <Image Name="GloriasTheaterBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                         <local:WorldGrid x:Name="GloriasTheaterGrid" Height="40" Width="200"/>
@@ -157,7 +279,7 @@
                             <Button Name="WaterlooWorld" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                 <DynamicResource ResourceKey="WaterlooWorldImage"/>
                             </Button>
-                            <!-- <Image Name="WaterlooWorldHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            --><!-- <Image Name="WaterlooWorldHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                         </StackPanel>
                         <Image Name="WaterlooWorldBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                         <local:WorldGrid x:Name="WaterlooWorldGrid" Height="40" Width="200"/>
@@ -168,7 +290,7 @@
                             <Button Name="BlackVelvetopia" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                 <DynamicResource ResourceKey="BlackVelvetopiaImage"/>
                             </Button>
-                            <!-- <Image Name="BlackVelvetopiaHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            --><!-- <Image Name="BlackVelvetopiaHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                         </StackPanel>
                         <Image Name="BlackVelvetopiaBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                         <local:WorldGrid x:Name="BlackVelvetopiaGrid" Height="40" Width="200"/>
@@ -179,7 +301,7 @@
                             <Button Name="MeatCircus" HorizontalAlignment="Center" Margin="5,5,5,0" Height="40" Width="40" Background="#303030" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" FontSize="20" BorderThickness="0" Template="{StaticResource DefaultButton}">
                                 <DynamicResource ResourceKey="MeatCircusImage"/>
                             </Button>
-                            <!-- <Image Name="MeatCircusHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> -->
+                            --><!-- <Image Name="MeatCircusHint" Source="images\QuestionMark.png" Height="20" Margin="25,-20,0,0" IsHitTestVisible="False"/> --><!--
                         </StackPanel>
                         <Image Name="MeatCircusBar" Source="images\VerticalBarWhite.png" VerticalAlignment="Top"/>
                         <local:WorldGrid x:Name="MeatCircusGrid" Height="40" Width="200"/>
@@ -213,11 +335,11 @@
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
 
-                    <!--Merit Badges-->
+                    --><!--Merit Badges--><!--
                     <local:Item x:Name="MentalMagnet" Grid.Row="0" Grid.Column="0">
                         <DynamicResource ResourceKey="MentalMagnetImage"/>
                     </local:Item>
-                    
+
                     <local:Item x:Name="Clairvoyance1" Grid.Row="0" Grid.Column="1">
                         <DynamicResource ResourceKey="ClairvoyanceImage"/>
                     </local:Item>
@@ -295,7 +417,7 @@
                         <DynamicResource ResourceKey="TelekinesisImage"/>
                     </local:Item>
 
-                    <!--Scavenger Hunt-->
+                    --><!--Scavenger Hunt--><!--
                     <local:Item x:Name="Acorn" Grid.Row="2" Grid.Column="0">
                         <DynamicResource ResourceKey="AcornImage"/>
                     </local:Item>
@@ -361,7 +483,7 @@
                     </local:Item>
 
 
-                    <!--Brain Hunt-->
+                    --><!--Brain Hunt--><!--
                     <local:Item x:Name="Bobby" Grid.Row="4" Grid.Column="0">
                         <DynamicResource ResourceKey="BrainPolaroidBobbyImage"/>
                     </local:Item>
@@ -438,7 +560,7 @@
                         <DynamicResource ResourceKey="BrainPolaroidChopsImage"/>
                     </local:Item>
 
-                    <!--Beat Oleander-->
+                    --><!--Beat Oleander--><!--
                     <local:Item x:Name="GloriaTrophy" Grid.Row="1" Grid.Column="10">
                         <DynamicResource ResourceKey="GloriaTrophyImage"/>
                     </local:Item>
@@ -463,12 +585,12 @@
                         <DynamicResource ResourceKey="CobwebDusterImage"/>
                     </local:Item>
 
-                    <!--Physical World Keys-->
+                    --><!--Physical World Keys--><!--
                     <local:Item x:Name="Button" Grid.Row="1" Grid.Column="7">
                         <DynamicResource ResourceKey="ButtonImage"/>
                     </local:Item>
 
-                    <!--Milkman Keys-->
+                    --><!--Milkman Keys--><!--
                     <local:Item x:Name="Crowfeather" Grid.Row="3" Grid.Column="2">
                         <DynamicResource ResourceKey="CrowfeatherImage"/>
                     </local:Item>
@@ -497,7 +619,7 @@
                         <DynamicResource ResourceKey="WateringCanImage"/>
                     </local:Item>
 
-                    <!--Gloria Keys-->
+                    --><!--Gloria Keys--><!--
 
                     <local:Item x:Name="Candle" Grid.Row="3" Grid.Column="9">
                         <DynamicResource ResourceKey="CandleImage"/>
@@ -507,7 +629,7 @@
                         <DynamicResource ResourceKey="MegaphoneImage"/>
                     </local:Item>
 
-                    <!--Waterloo Keys-->
+                    --><!--Waterloo Keys--><!--
                     <local:Item x:Name="FredsNote" Grid.Row="3" Grid.Column="11">
                         <DynamicResource ResourceKey="FredsNoteImage"/>
                     </local:Item>
@@ -521,8 +643,8 @@
                     </local:Item>
 
                 </Grid>
-            </StackPanel>
+            </StackPanel>-->
 
-        </Canvas>
+        </Grid>
     </DockPanel>
 </Window>
