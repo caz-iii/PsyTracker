@@ -8,13 +8,6 @@
 
 <h3 align="center">PsyTracker</h3>
 
-<p align="center">
-    Psychonauts item tracker
-    <br />
-    <br />
-  </p>
-</div>
-
 <!-- ABOUT -->
 
 ## About
