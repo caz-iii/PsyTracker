@@ -5,8 +5,14 @@
 <br />
 <div align="center">
     <img src="PsyTrackerApp/images/pokeylope.png" alt="Logo" width="80" height="80">
-
-<h3 align="center">PsyTracker</h3>
+    <h3 align="center">PsyTracker</h3>
+    <p align="center">
+    Item tracker for Psychonauts and the randomizer: PsychoRando
+    <br />
+    <a href="https://www.twitch.tv/videos/2086383371"><strong>View Demo »</strong></a>
+    <br />
+    <br />
+    </p>
 </div>
 
 <!-- ABOUT -->
