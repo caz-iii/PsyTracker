@@ -19,9 +19,7 @@
 
 ## About
 
-<div align="center">
- <img src="screenshot.png" alt="screenshot>
-</div>
+![](screenshot.png)
 
 Currently a work in progress. The aim with this project is to create an item tracker as a companion app with the Psychonauts Randomizer: [PsychoRando](https://github.com/Akashortstack/PsychoRando)
 
