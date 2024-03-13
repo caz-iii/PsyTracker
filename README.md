@@ -48,7 +48,7 @@ This app may require that you have the [.NET 6 Desktop Runtime](https://dotnet.m
 
 ### Installation
 
-Simply download the app from this repository's releases page and run PsyTracker.exe 
+Simply download the app from this repository's releases page, unzip the folder, and run PsyTracker.exe 
 
 This application is unsigned, so you may receive a warning before when first launching the app. 
 
