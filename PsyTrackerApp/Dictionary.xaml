@@ -41,25 +41,25 @@
     <Image x:Key="StraightJacketImage" Source="images\checks\beatoleander\straightjacket.png" x:Shared="False"/>
 
     <!--Brain Hunt-->
-    <Image x:Key="BrainPolaroidBennyImage" Source="images\checks\brainhunt\BrainPolaroidBenny.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidBobbyImage" Source="images\checks\brainhunt\BrainPolaroidBobby.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidChloeImage" Source="images\checks\brainhunt\BrainPolaroidChloe.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidChopsImage" Source="images\checks\brainhunt\BrainPolaroidChops.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidClemImage" Source="images\checks\brainhunt\BrainPolaroidClem.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidCrystalImage" Source="images\checks\brainhunt\BrainPolaroidCrystal.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidDogenImage" Source="images\checks\brainhunt\BrainPolaroidDogen.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidElkaImage" Source="images\checks\brainhunt\BrainPolaroidElka.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidEltonImage" Source="images\checks\brainhunt\BrainPolaroidElton.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidFrankeImage" Source="images\checks\brainhunt\BrainPolaroidFranke.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidJTImage" Source="images\checks\brainhunt\BrainPolaroidJT.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidKittyImage" Source="images\checks\brainhunt\BrainPolaroidKitty.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidMaloofImage" Source="images\checks\brainhunt\BrainPolaroidMaloof.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidMikhailImage" Source="images\checks\brainhunt\BrainPolaroidMikhail.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidMilkaImage" Source="images\checks\brainhunt\BrainPolaroidMilka.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidNilsImage" Source="images\checks\brainhunt\BrainPolaroidNils.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidQuentinImage" Source="images\checks\brainhunt\BrainPolaroidQuentin.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidVernonImage" Source="images\checks\brainhunt\BrainPolaroidVernon.png" x:Shared="False"/>
-    <Image x:Key="BrainPolaroidPhoebeImage" Source="images\checks\brainhunt\BrainPolaroidPhoebe.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidBennyImage" Source="images\checks\brainhunt\benny.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidBobbyImage" Source="images\checks\brainhunt\bobby.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidChloeImage" Source="images\checks\brainhunt\chloe.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidChopsImage" Source="images\checks\brainhunt\chops.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidClemImage" Source="images\checks\brainhunt\clem.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidCrystalImage" Source="images\checks\brainhunt\crystal.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidDogenImage" Source="images\checks\brainhunt\dogen.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidElkaImage" Source="images\checks\brainhunt\elka.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidEltonImage" Source="images\checks\brainhunt\elton.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidFrankeImage" Source="images\checks\brainhunt\franke.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidJTImage" Source="images\checks\brainhunt\jt.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidKittyImage" Source="images\checks\brainhunt\kitty.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidMaloofImage" Source="images\checks\brainhunt\maloof.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidMikhailImage" Source="images\checks\brainhunt\mikhail.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidMilkaImage" Source="images\checks\brainhunt\milka.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidNilsImage" Source="images\checks\brainhunt\nils.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidQuentinImage" Source="images\checks\brainhunt\quentin.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidVernonImage" Source="images\checks\brainhunt\vernon.png" x:Shared="False"/>
+    <Image x:Key="BrainPolaroidPhoebeImage" Source="images\checks\brainhunt\phoebe.png" x:Shared="False"/>
 
     <!--Scavenger Hunt-->
     <Image x:Key="AcornImage" Source="images\checks\scavengerhunt\Acorn.png" x:Shared="False"/>
