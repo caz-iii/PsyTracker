@@ -135,12 +135,20 @@
     <!--Telekinesis Badge-->
 
 
-    <!--Emotional Baggage Tags-->
-    <Image x:Key="DufflebagTagImage" Source="images\tags\dufflebagtag.png" x:Shared="False"/>
-    <Image x:Key="HatboxTagImage" Source="images\tags\hatboxtag.png" x:Shared="False"/>
-    <Image x:Key="PurseTagImage" Source="images\tags\pursetag.png" x:Shared="False"/>
-    <Image x:Key="SteamerTrunkTagImage" Source="images\tags\steamertrunktag.png" x:Shared="False"/>
-    <Image x:Key="SuitcaseTagImage" Source="images\tags\suitcasetag.png" x:Shared="False"/>
+    <!--Emotional Baggage -->
+    <Image x:Key="DufflebagImage" Source="images\emotional-baggage\dufflebag.png" x:Shared="False"/>
+    <Image x:Key="HatboxImage" Source="images\emotional-baggage\hatbox.png" x:Shared="False"/>
+    <Image x:Key="PurseImage" Source="images\emotional-baggage\purse.png" x:Shared="False"/>
+    <Image x:Key="SteamertrunkImage" Source="images\emotional-baggage\steamertrunk.png" x:Shared="False"/>
+    <Image x:Key="SuitcaseImage" Source="images\emotional-baggage\suitcase.png" x:Shared="False"/>
+    
+    
+    <!-- Tags -->
+    <Image x:Key="DufflebagTagImage" Source="images\emotional-baggage\tag-dufflebag.png" x:Shared="False"/>
+    <Image x:Key="HatboxTagImage" Source="images\emotional-baggage\tag-hatbox.png" x:Shared="False"/>
+    <Image x:Key="PurseTagImage" Source="images\emotional-baggage\tag-purse.png" x:Shared="False"/>
+    <Image x:Key="SteamerTrunkTagImage" Source="images\emotional-baggage\tag-steamertrunk.png" x:Shared="False"/>
+    <Image x:Key="SuitcaseTagImage" Source="images\emotional-baggage\tag-suitcase.png" x:Shared="False"/>
 
     <!--Victory Conditions-->
     <Image x:Key="PsychonautBadgeImage" Source="images\victory-conditions\beatalllevels.png" x:Shared="False"/>
