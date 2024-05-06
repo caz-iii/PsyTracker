@@ -10,6 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="images\tags\**" />
+    <EmbeddedResource Remove="images\tags\**" />
+    <None Remove="images\tags\**" />
+    <Page Remove="images\tags\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="images\badges\Basic Braining.png" />
     <None Remove="images\badges\Clairvoyance.png" />
     <None Remove="images\badges\Confusion.png" />
@@ -24,6 +31,8 @@
     <None Remove="images\checks\beatoleander\gloriatrophy.png" />
     <None Remove="images\checks\beatoleander\lobotoportrait.png" />
     <None Remove="images\checks\beatoleander\straightjacket.png" />
+    <None Remove="images\checks\brainhunt\benny.png" />
+    <None Remove="images\checks\brainhunt\bobby.png" />
     <None Remove="images\checks\brainhunt\BrainPolaroidBenny.png" />
     <None Remove="images\checks\brainhunt\BrainPolaroidBobby.png" />
     <None Remove="images\checks\brainhunt\BrainPolaroidChloe.png" />
@@ -43,6 +52,23 @@
     <None Remove="images\checks\brainhunt\BrainPolaroidPhoebe.png" />
     <None Remove="images\checks\brainhunt\BrainPolaroidQuentin.png" />
     <None Remove="images\checks\brainhunt\BrainPolaroidVernon.png" />
+    <None Remove="images\checks\brainhunt\chloe.png" />
+    <None Remove="images\checks\brainhunt\chops.png" />
+    <None Remove="images\checks\brainhunt\clem.png" />
+    <None Remove="images\checks\brainhunt\crystal.png" />
+    <None Remove="images\checks\brainhunt\dogen.png" />
+    <None Remove="images\checks\brainhunt\elka.png" />
+    <None Remove="images\checks\brainhunt\elton.png" />
+    <None Remove="images\checks\brainhunt\franke.png" />
+    <None Remove="images\checks\brainhunt\jt.png" />
+    <None Remove="images\checks\brainhunt\kitty.png" />
+    <None Remove="images\checks\brainhunt\maloof.png" />
+    <None Remove="images\checks\brainhunt\mikhail.png" />
+    <None Remove="images\checks\brainhunt\milka.png" />
+    <None Remove="images\checks\brainhunt\nils.png" />
+    <None Remove="images\checks\brainhunt\phoebe.png" />
+    <None Remove="images\checks\brainhunt\quentin.png" />
+    <None Remove="images\checks\brainhunt\vernon.png" />
     <None Remove="images\checks\scavengerhunt\Acorn.png" />
     <None Remove="images\checks\scavengerhunt\Dinobone.png" />
     <None Remove="images\checks\scavengerhunt\Diversehelmet.png" />
@@ -113,11 +139,6 @@
     <None Remove="images\other\smellingsalts.png" />
     <None Remove="images\other\squirreldinner.png" />
     <None Remove="images\pokeylope.png" />
-    <None Remove="images\tags\dufflebagtag.png" />
-    <None Remove="images\tags\hatboxtag.png" />
-    <None Remove="images\tags\pursetag.png" />
-    <None Remove="images\tags\steamertrunktag.png" />
-    <None Remove="images\tags\suitcasetag.png" />
     <None Remove="images\VerticalBarWhite.png" />
     <None Remove="images\victory-conditions\beatalllevels.png" />
     <None Remove="images\victory-conditions\beatoleander.png" />
@@ -140,6 +161,63 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\checks\brainhunt\benny.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\bobby.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\chloe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\chops.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\clem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\crystal.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\dogen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\elka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\elton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\franke.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\jt.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\kitty.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\maloof.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\mikhail.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\milka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\nils.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\phoebe.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\quentin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\checks\brainhunt\vernon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\emotional-baggage\dufflebag.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -456,21 +534,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\pokeylope.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="images\tags\dufflebagtag.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="images\tags\hatboxtag.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="images\tags\pursetag.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="images\tags\steamertrunktag.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="images\tags\suitcasetag.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="images\VerticalBarWhite.png">
