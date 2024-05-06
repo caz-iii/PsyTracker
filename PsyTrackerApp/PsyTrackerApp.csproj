@@ -59,6 +59,16 @@
     <None Remove="images\checks\scavengerhunt\Sandwich.png" />
     <None Remove="images\checks\scavengerhunt\Voodoodoll.png" />
     <None Remove="images\checks\scavengerhunt\Watch.png" />
+    <None Remove="images\emotional-baggage\dufflebag.png" />
+    <None Remove="images\emotional-baggage\hatbox.png" />
+    <None Remove="images\emotional-baggage\purse.png" />
+    <None Remove="images\emotional-baggage\steamertrunk.png" />
+    <None Remove="images\emotional-baggage\suitcase.png" />
+    <None Remove="images\emotional-baggage\tag-dufflebag.png" />
+    <None Remove="images\emotional-baggage\tag-hatbox.png" />
+    <None Remove="images\emotional-baggage\tag-purse.png" />
+    <None Remove="images\emotional-baggage\tag-steamertrunk.png" />
+    <None Remove="images\emotional-baggage\tag-suitcase.png" />
     <None Remove="images\keys\Button.png" />
     <None Remove="images\keys\cobweb-duster.png" />
     <None Remove="images\keys\dowsingrod.png" />
@@ -130,6 +140,36 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images\emotional-baggage\dufflebag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\hatbox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\purse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\steamertrunk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\suitcase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\tag-dufflebag.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\tag-hatbox.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\tag-purse.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\tag-steamertrunk.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="images\emotional-baggage\tag-suitcase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="images\other\ballcolorizer.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

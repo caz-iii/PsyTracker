@@ -134,7 +134,7 @@ namespace PsyTrackerApp
                 //if (isreport == false)
                 //    window.SetHintText("");
 
-                ((MainWindow)Application.Current.MainWindow).ItemPool.Children.Remove(this);
+                ((MainWindow)Application.Current.MainWindow).ItemPoolGrid.Children.Remove(this);
 
                 for (int i = 0; i < data.Worlds.Count; ++i)
                 {
@@ -176,11 +176,11 @@ namespace PsyTrackerApp
         public void HandleItemReturn()
         {
             Data data = MainWindow.data;
-            if (Parent != ((MainWindow)Application.Current.MainWindow).ItemPool)
+            if (Parent != ((MainWindow)Application.Current.MainWindow).ItemPoolGrid)
             {
                 ((WorldGrid)Parent).HandleWorldGrid(this, false);
 
-                ((MainWindow)Application.Current.MainWindow).ItemPool.Children.Add(this);
+                ((MainWindow)Application.Current.MainWindow).ItemPoolGrid.Children.Add(this);
 
                 //((MainWindow)Application.Current.MainWindow).DecrementCollected();
 

@@ -97,7 +97,7 @@ namespace PsyTrackerApp
             //    window.SetHintText("");
 
             // move item to world
-            window.ItemPool.Children.Remove(button);
+            window.ItemPoolGrid.Children.Remove(button);
             grid.Children.Add(button);
 
             // update collection count

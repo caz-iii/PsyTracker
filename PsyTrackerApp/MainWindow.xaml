@@ -8,7 +8,7 @@
         ResizeMode="CanResize"
         Closing="Window_Closing"
         LocationChanged="Window_LocationChanged"
-        Title="PsyTracker" Height="1760" Width="1140">
+        Title="PsyTracker" Height="880" Width="570" Background="#303030" MinHeight="440" MinWidth="300">
     <Window.Resources>
         <ResourceDictionary>
 
@@ -20,21 +20,20 @@
     </Window.Resources>
 
     <DockPanel>
-        <Menu DockPanel.Dock="Top" Background="White">
+        <!--<Menu DockPanel.Dock="Top" Background="White">
             <MenuItem Header="_Options">
                 <MenuItem Name="Test" Header="Test"/>
-                <!-- <Separator/> -->
-                <!-- <MenuItem Name="PromiseCharmOption" Header="Promise Charm" IsCheckable="True" IsChecked="False" Click="PromiseCharmToggle"/> -->
+                --><!-- <Separator/> -->
+                <!-- <MenuItem Name="PromiseCharmOption" Header="Promise Charm" IsCheckable="True" IsChecked="False" Click="PromiseCharmToggle"/> --><!--
             </MenuItem>
-        </Menu>
+        </Menu>-->
 
 
         <Grid Name="Window" Background="#303030">
             <Grid.RowDefinitions>
-                <RowDefinition Height="7*"/>
-                <RowDefinition Height="0.9*"/>
-                <RowDefinition Name="FormRow" Height="0*"/>
-                <RowDefinition Height="2*"/>
+                <RowDefinition x:Name="WorldRow" Height="2.2*"/>
+                <RowDefinition x:Name="ItemPoolRow" Height="2.2*"/>
+                <!--<RowDefinition x:Name="SettingRow" Height="0.5*"/>-->
             </Grid.RowDefinitions>
 
             <Grid Grid.Row="0">
@@ -473,17 +472,17 @@
             </Grid>
             
             <!-- Items -->
-            <Grid Name="ItemPool" Grid.Row="3">
+            <Grid Name="ItemPoolGrid" Grid.Row="3">
                 <Grid.RowDefinitions>
-                    <RowDefinition Name="BadgeRow"/>
-                    <RowDefinition Name="BaggageRow"/>
+                    <RowDefinition Name="MeritBadgeRow"/>
+                    <RowDefinition Name="EmotionalBaggageRow"/>
                     <RowDefinition Name="MentalWorldItemsRow" />
                     <RowDefinition Name="RealWorldItemsRow" />
                     <RowDefinition  Name="ScavengerHuntRow1" />
                     <RowDefinition  Name="ScavengerHuntRow2" />
                     <RowDefinition  Name="BrainHuntRow1" />
-                    <RowDefinition  Name="BrainHuntRow2" Height="0*"/>
-                    <RowDefinition  Name="BrainHuntRow3" Height="0*"/>
+                    <RowDefinition  Name="BrainHuntRow2" />
+                    <RowDefinition  Name="BrainHuntRow3"/>
                 </Grid.RowDefinitions>
 
                 <!-- Merit Badges -->
@@ -895,8 +894,6 @@
                 <!-- Brain Hunt 3 -->
                 <Grid Grid.Row="8">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
