@@ -22,6 +22,9 @@ namespace PsyTrackerApp
     /// </summary>
     public partial class Item : ContentControl
     {
+        bool selected = false;
+        MainWindow MainW = (MainWindow)App.Current.MainWindow;
+
         public Item()
         {
             InitializeComponent();
@@ -35,7 +38,7 @@ namespace PsyTrackerApp
             public Point CenterOffset;
             public ItemAdorner(Item adornedElement) : base(adornedElement)
             {
-                renderRect = new Rect(adornedElement.RenderSize);
+                renderRect = new Rect(adornedElement.DesiredSize);
                 this.IsHitTestVisible = false;
                 imageSource = ((adornedElement).Content as Image).Source;
                 CenterOffset = new Point(-renderRect.Width / 2, -renderRect.Height / 2);
@@ -75,6 +78,26 @@ namespace PsyTrackerApp
         private ItemAdorner myAdornment;
         private PInPoint pointRef = new PInPoint();
 
+        public void Item_Click(object sender, RoutedEventArgs e)
+        {
+            Data data = MainWindow.data;
+            if (data.selected != null && data.WorldsData[data.selected.Name].worldGrid.ReportHandler(this))
+            {
+                data.WorldsData[data.selected.Name].worldGrid.Add_Item(this);
+            }
+        }
+
+        public void Item_MouseUp(object sender, MouseButtonEventArgs e)
+        {
+            if (selected)
+                Item_Click(sender, e);
+        }
+
+        public void Item_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            selected = true;
+        }
+
         public void Item_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -87,111 +110,71 @@ namespace PsyTrackerApp
             }
         }
 
-        public void Item_Click(object sender, RoutedEventArgs e)
-        {
-            Data data = MainWindow.data;
-            MainWindow window = ((MainWindow)Application.Current.MainWindow);
 
-            if (data.selected != null)
-            {
-                //    bool isreport = false;
 
-                //    // item is a report
-                //    if (data.hintsLoaded && (int)GetValue(Grid.RowProperty) == 0)
-                //    {
-                //        int index = (int)GetValue(Grid.ColumnProperty);
 
-                //        if (data.reportAttempts[index] == 0)
-                //            return;
 
-                //    if (data.reportLocations[index].Replace(" ", "") == data.selected.Name)
-                //    {
-                //        window.SetHintText(data.reportInformation[index].Item1 + " has " + data.reportInformation[index].Item2 + " important checks.");
-                //        data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail0");
-                //        data.reportAttempts[index] = 3;
-                //        isreport = true;
 
-                //        for (int i = 0; i < data.Hints.Count; ++i)
-                //        {
-                //            if (data.Worlds[i].Name == data.reportInformation[index].Item1.Replace(" ", ""))
-                //                ((MainWindow)Application.Current.MainWindow).SetReportValue(data.Hints[i], data.reportInformation[index].Item2 + 1);
-                //        }
-                //    }
-                //    else
-                //    {
-                //        data.reportAttempts[index]--;
-                //        if (data.reportAttempts[index] == 0)
-                //            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail3");
-                //        else if (data.reportAttempts[index] == 1)
-                //            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail2");
-                //        else if (data.reportAttempts[index] == 2)
-                //            data.ReportAttemptVisual[index].SetResourceReference(ContentProperty, "Fail1");
 
-                //        return;
-                //    }
-                //}
 
-                //if (isreport == false)
-                //    window.SetHintText("");
 
-                ((MainWindow)Application.Current.MainWindow).ItemPoolGrid.Children.Remove(this);
 
-                for (int i = 0; i < data.Worlds.Count; ++i)
-                {
-                    if (data.selected == data.Worlds[i])
-                    {
-                        data.Grids[i].HandleWorldGrid(this, true);
-                        break;
-                    }
-                }
 
-                //((MainWindow)Application.Current.MainWindow).IncrementCollected();
 
-                MouseDoubleClick -= Item_Click;
-                MouseDown += Item_Return;
 
-                MouseMove -= Item_MouseMove;
 
-                //if (isreport)
-                //{
-                //    MouseEnter += Report_Hover;
-                //}
-            }
-        }
 
-        //         public void Report_Hover(object sender, RoutedEventArgs e)
-        // {
-        //     Data data = MainWindow.data;
-        //     MainWindow window = ((MainWindow)Application.Current.MainWindow);
-        //     int index = (int)GetValue(Grid.ColumnProperty);
 
-        //     window.SetHintText(data.reportInformation[index].Item1 + " has " + data.reportInformation[index].Item2 + " important checks.");
-        // }
 
-        public void Item_Return(object sender, RoutedEventArgs e)
-        {
-            HandleItemReturn();
-        }
 
-        public void HandleItemReturn()
-        {
-            Data data = MainWindow.data;
-            if (Parent != ((MainWindow)Application.Current.MainWindow).ItemPoolGrid)
-            {
-                ((WorldGrid)Parent).HandleWorldGrid(this, false);
 
-                ((MainWindow)Application.Current.MainWindow).ItemPoolGrid.Children.Add(this);
 
-                //((MainWindow)Application.Current.MainWindow).DecrementCollected();
 
-                MouseDown -= Item_Return;
 
-                MouseDoubleClick += Item_Click;
-                MouseMove += Item_MouseMove;
 
-                //MouseEnter -= Report_Hover;
-            }
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void Item_PreviewGiveFeedback(object sender, GiveFeedbackEventArgs e)
         {
@@ -201,6 +184,64 @@ namespace PsyTrackerApp
 
             Mouse.SetCursor(Cursors.None);
             e.Handled = true;
+        }
+
+        public void Item_Return(object sender, RoutedEventArgs e)
+        {
+            HandleItemReturn();
+        }
+
+        public void HandleItemReturn()
+        {
+            Data data = MainWindow.data;
+
+            if (this.Name.StartsWith("Ghost_"))
+            {
+                Grid GhostRow = VisualTreeHelper.GetChild(MainW.ItemPool, 4) as Grid; //ghost grid always at this position
+                if (Parent != GhostRow)
+                {
+                    WorldGrid parent = this.Parent as WorldGrid;
+                    ((WorldGrid)Parent).Handle_WorldGrid(this, false);
+
+                    GhostRow.Children.Add(this);
+                    parent.Children.Remove(this);
+                }
+                return;
+            }
+
+            //int index = data.Items.IndexOf(this);
+            //Grid ItemRow = data.ItemsGrid[index];
+            Grid ItemRow = data.Items[this.Name].Item2;
+
+            if (Parent != ItemRow)
+            {
+                WorldGrid parent = this.Parent as WorldGrid;
+
+                ((WorldGrid)Parent).Handle_WorldGrid(this, false);
+
+                ItemRow.Children.Add(this);
+
+                MainW.SetCollected(false);
+
+                MouseDown -= Item_Return;
+
+                if (data.dragDrop)
+                {
+                    MouseDoubleClick -= Item_Click;
+                    MouseDoubleClick += Item_Click;
+                    MouseMove -= Item_MouseMove;
+                    MouseMove += Item_MouseMove;
+                }
+                else
+                {
+                    MouseDown -= Item_MouseDown;
+                    MouseDown += Item_MouseDown;
+                    MouseUp -= Item_MouseUp;
+                    MouseUp += Item_MouseUp;
+                }
+
+                // MouseEnter -= Report_Hover;
+            }
         }
     }
 }
