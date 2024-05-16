@@ -213,294 +213,341 @@ namespace PsyTrackerApp
             switch (itemname)
             {
                 case "Marksmanship":
-                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Marksmanship += addRemove;
+                    window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
+                    if (Real_Marksmanship == 3)
+                    {
+                        window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
+                        window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Levitation":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Levitation += addRemove;
+                    window.LevitationCount.Text = (3 - Real_Levitation).ToString();
+                    if (Real_Levitation == 3)
+                    {
+                        window.LevitationCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.LevitationCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.LevitationCount.Fill = (LinearGradientBrush)FindResource("Color_Levitation");
+                        window.LevitationCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Shield":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Shield += addRemove;
+                    window.ShieldCount.Text = (3 - Real_Shield).ToString();
+                    if (Real_Shield == 3)
+                    {
+                        window.ShieldCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.ShieldCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.ShieldCount.Fill = (LinearGradientBrush)FindResource("Color_Shield");
+                        window.ShieldCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "TK":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_TK += addRemove;
+                    window.TKCount.Text = (2 - Real_TK).ToString();
+                    if (Real_TK == 2)
+                    {
+                        window.TKCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.TKCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.TKCount.Fill = (LinearGradientBrush)FindResource("Color_TK");
+                        window.TKCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Pyro":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Pyro += addRemove;
+                    window.PyroCount.Text = (2 - Real_Pyro).ToString();
+                    if (Real_Pyro == 2)
+                    {
+                        window.PyroCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.PyroCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.PyroCount.Fill = (LinearGradientBrush)FindResource("Color_Pyro");
+                        window.PyroCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Clairvoyance":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Clairvoyance += addRemove;
+                    window.ClairvoyanceCount.Text = (2 - Real_Clairvoyance).ToString();
+                    if (Real_Clairvoyance == 2)
+                    {
+                        window.ClairvoyanceCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.ClairvoyanceCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.ClairvoyanceCount.Fill = (LinearGradientBrush)FindResource("Color_Clairvoyance");
+                        window.ClairvoyanceCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Invisibility":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Invisibility += addRemove;
+                    window.InvisibilityCount.Text = (2 - Real_Invisibility).ToString();
+                    if (Real_Invisibility == 2)
+                    {
+                        window.InvisibilityCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.InvisibilityCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.InvisibilityCount.Fill = (LinearGradientBrush)FindResource("Color_Invisibility");
+                        window.InvisibilityCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Confusion":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Confusion += addRemove;
+                    window.ConfusionCount.Text = (2 - Real_Confusion).ToString();
+                    if (Real_Confusion == 2)
+                    {
+                        window.ConfusionCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.ConfusionCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.ConfusionCount.Fill = (LinearGradientBrush)FindResource("Color_Confusion");
+                        window.ConfusionCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "DuffleBagTag":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_DuffleBagTag += addRemove;
+                    window.DuffleBagTagCount.Text = (10 - Real_DuffleBagTag).ToString();
+                    if (Real_DuffleBagTag == 10)
+                    {
+                        window.DuffleBagTagCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.DuffleBagTagCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.DuffleBagTagCount.Fill = (LinearGradientBrush)FindResource("Color_DuffleBagTag");
+                        window.DuffleBagTagCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "DuffleBag":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_DuffleBag += addRemove;
+                    window.DuffleBagCount.Text = (10 - Real_DuffleBag).ToString();
+                    if (Real_DuffleBag == 10)
+                    {
+                        window.DuffleBagCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.DuffleBagCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.DuffleBagCount.Fill = (LinearGradientBrush)FindResource("Color_DuffleBag");
+                        window.DuffleBagCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "HatboxTag":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_HatboxTag += addRemove;
+                    window.HatboxTagCount.Text = (10 - Real_HatboxTag).ToString();
+                    if (Real_HatboxTag == 10)
+                    {
+                        window.HatboxTagCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.HatboxTagCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.HatboxTagCount.Fill = (LinearGradientBrush)FindResource("Color_HatboxTag");
+                        window.HatboxTagCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Hatbox":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Hatbox += addRemove;
+                    window.HatboxCount.Text = (10 - Real_Hatbox).ToString();
+                    if (Real_Hatbox == 10)
+                    {
+                        window.HatboxCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.HatboxCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.HatboxCount.Fill = (LinearGradientBrush)FindResource("Color_Hatbox");
+                        window.HatboxCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "PurseTag":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_PurseTag += addRemove;
+                    window.HatboxCount.Text = (10 - Real_PurseTag).ToString();
+                    if (Real_Hatbox == 10)
+                    {
+                        window.PurseTagCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.PurseTagCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.PurseTagCount.Fill = (LinearGradientBrush)FindResource("Color_PurseTag");
+                        window.PurseTagCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Purse":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Purse += addRemove;
+                    window.PurseCount.Text = (10 - Real_Purse).ToString();
+                    if (Real_Purse == 10)
+                    {
+                        window.PurseCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.PurseCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.PurseCount.Fill = (LinearGradientBrush)FindResource("Color_Purse");
+                        window.PurseCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "SteamerTrunkTag":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_SteamerTrunkTag += addRemove;
+                    window.SteamerTrunkTagCount.Text = (10 - Real_SteamerTrunkTag).ToString();
+                    if (Real_SteamerTrunkTag == 10)
+                    {
+                        window.SteamerTrunkTagCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.SteamerTrunkTagCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.SteamerTrunkTagCount.Fill = (LinearGradientBrush)FindResource("Color_SteamerTrunkTag");
+                        window.SteamerTrunkTagCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Steamertrunk":
 
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_SteamerTrunk += addRemove;
+                    window.SteamerTrunkCount.Text = (10 - Real_SteamerTrunk).ToString();
+                    if (Real_SteamerTrunk == 10)
+                    {
+                        window.SteamerTrunkCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.SteamerTrunkCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.SteamerTrunkCount.Fill = (LinearGradientBrush)FindResource("Color_SteamerTrunk");
+                        window.SteamerTrunkCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "SuitcaseTag":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_SuitcaseTag += addRemove;
+                    window.SuitcaseTagCount.Text = (10 - Real_SuitcaseTag).ToString();
+                    if (Real_SuitcaseTag == 10)
+                    {
+                        window.SuitcaseTagCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.SuitcaseTagCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.SuitcaseTagCount.Fill = (LinearGradientBrush)FindResource("Color_SuitcaseTag");
+                        window.SuitcaseTagCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Suitcase":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Suitcase += addRemove;
+                    window.SuitcaseCount.Text = (10 - Real_Suitcase).ToString();
+                    if (Real_Suitcase == 10)
+                    {
+                        window.SuitcaseCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.SuitcaseCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.SuitcaseCount.Fill = (LinearGradientBrush)FindResource("Color_Suitcase");
+                        window.SuitcaseCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 case "Candle":
-                                Real_Marksmanship += addRemove;
-                window.MarksmanshipCount.Text = (3 - Real_Marksmanship).ToString();
-                if (Real_Marksmanship == 3)
-                {
-                    window.MarksmanshipCount.Fill = (SolidColorBrush)FindResource("Color_Black");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
-                }
-                else
-                {
-                    window.MarksmanshipCount.Fill = (LinearGradientBrush)FindResource("Color_Marksmanship");
-                    window.MarksmanshipCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
-                }
-                return;
+                    Real_Candle += addRemove;
+                    window.CandleCount.Text = (2 - Real_Candle).ToString();
+                    if (Real_Candle == 2)
+                    {
+                        window.CandleCount.Fill = (SolidColorBrush)FindResource("Color_Black");
+                        window.CandleCount.Stroke = (SolidColorBrush)FindResource("Color_Trans");
+                    }
+                    else
+                    {
+                        window.CandleCount.Fill = (LinearGradientBrush)FindResource("Color_Candle");
+                        window.CandleCount.Stroke = (SolidColorBrush)FindResource("Color_Black");
+                    }
+                    return;
 
                 default:
                     return;
             }
         }
+
+        private int TableReturn(string nameButton)
+        {
+            Data data = MainWindow.data;
+            string type = Codes.FindItemType(nameButton);
+            if (type != "Unknown")
+            {
+                return nameButton.StartsWith("Ghost_") && !window.GhostMathOption.IsChecked ? 0 : data.PointsDatanew[type];
+            }
+            return 0;
+
+            //else if (MainWindow.data.PointsDatanew.Keys.Contains(type))
+        }
+
+        private void Handle_Shadows(Item item, bool add)
+        {
+            //don't hide shadows for the multi items
+            if (Codes.FindItemType(item.Name) == "magic" || Codes.FindItemType(item.Name) == "page" || item.Name.StartsWith("Munny") || item.Name.StartsWith("Ghost_"))
+            {
+                return;
+            }
+
+            string shadowName = "S_" + item.Name;
+            //ContentControl shadow = window.ItemPool.FindName(shadowName) as ContentControl;
+            ContentControl shadow = null;
+
+            foreach (Grid itemrow in window.ItemPool.Children)
+            {
+                shadow = itemrow.FindName(shadowName) as ContentControl;
+
+                if (shadow != null)
+                    break;
+            }
+
+            if (shadow == null)
+                return;
+
+            if (add)
+            {
+                shadow.Opacity = 1.0;
+            }
+            else
+            {
+                shadow.Opacity = 0.0;
+            }
+        }
+
     }
 }
