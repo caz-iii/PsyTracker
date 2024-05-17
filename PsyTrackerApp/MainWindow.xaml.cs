@@ -6,16 +6,16 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
+using System.Windows.Shapes;
+using System.Linq;
 using System.IO;
 using Microsoft.Win32;
-using System.Drawing;
 using System.Windows.Documents;
 using System.Runtime.InteropServices;
-using PsyTrackerApp;
-using static System.Net.WebRequestMethods;
-using System.Diagnostics.Metrics;
-using System.Reflection;
-using System.Windows.Media.Media3D;
+using System.ComponentModel;
+using System.Windows.Forms;
+using Button = System.Windows.Controls.Button;
+//using hotkeys
 
 namespace PsyTrackerApp
 {
@@ -25,19 +25,44 @@ namespace PsyTrackerApp
     public partial class MainWindow : Window
     {
         public static Data data;
+        public int collected;
+        private int total;
+        public static PointTotal =0;
+        public int DeathCounter = 0;
 
         public MainWindow()
         {
             InitializeComponent();
-
             InitData();
+            InitImages();
 
-            //InitOptions();
+            collectedChecks = new List<ImportantCheck>();
+            newChecks = new List<ImportantCheck>();
+            previousChecks = new List<ImportantCheck>(); 0
+
+            InitOptions();
+            //VisitLockCheck();
+
+            OnReset(null, null);
         }
+
+
+
+
+
+
+
+
+
+
+
+
 
         private void InitData()
         {
             data = new Data();
+
+            data.WorldsData.Add(new WorldData(WhisperingRockTop, WhisperingRock, null, null, WhisperingRockGrid, false, 0));
 
             data.Worlds.Add(WhisperingRock);
             data.Worlds.Add(BasicBraining);
@@ -53,155 +78,36 @@ namespace PsyTrackerApp
             data.Worlds.Add(BlackVelvetopia);
             data.Worlds.Add(MeatCircus);
 
-            //data.Hints.Add(SorasHeartHint);
-            //data.Hints.Add(DriveFormsHint);
-            //data.Hints.Add(SimulatedHint);
-            //data.Hints.Add(TwilightTownHint);
-            //data.Hints.Add(HollowBastionHint);
-            //data.Hints.Add(BeastsCastleHint);
-            //data.Hints.Add(OlympusColiseumHint);
-            //data.Hints.Add(AgrabahHint);
-            //data.Hints.Add(LandofDragonsHint);
-            //data.Hints.Add(HundredAcreWoodHint);
-            //data.Hints.Add(PrideLandsHint);
-            //data.Hints.Add(DisneyCastleHint);
-            //data.Hints.Add(HalloweenTownHint);
-            //data.Hints.Add(PortRoyalHint);
-            //data.Hints.Add(SpaceParanoidsHint);
-            //data.Hints.Add(TWTNWHint);
-            //data.Hints.Add(AtlanticaHint);
+            foreach (Grid itemrow in ItemPool.Children)
+            {
+                foreach (object item in itemrow.Children)
+                {
+                    if (item is Item)
+                    {
+                        Item check = item as Item;
+                        if (!check.Name.StartsWith("Ghost_"))
+                        {
+                            data.Items.Add(check.Name, new Tuple<Item, Grid>(check, check.Parent as Grid));  //list of all valid items
+                            //data.ItemsGrid.Add(check.Parent as Grid);   //list of grids each item belongs to
+                            ++total;
+                            //Console.WriteLine(check.Name);
+                        }
+                        else
+                        {
+                            data.GhostItems.Add(check.Name, check);     //list of all valid ghost items (why is this a dictionary????)
+                        }
+                    }
+                }
+            }
 
-            data.Grids.Add(WhisperingRockGrid);
-            data.Grids.Add(BasicBrainingGrid);
-            data.Grids.Add(ShootingGalleryGrid);
-            data.Grids.Add(DancePartyGrid);
-            data.Grids.Add(BrainTumblerGrid);
-            data.Grids.Add(LungfishopolisGrid);
-            data.Grids.Add(FordGrid);
-            data.Grids.Add(ThorneyTowersGrid);
-            data.Grids.Add(MilkmanConspiracyGrid);
-            data.Grids.Add(GloriasTheaterGrid);
-            data.Grids.Add(WaterlooWorldGrid);
-            data.Grids.Add(BlackVelvetopiaGrid);
-            data.Grids.Add(MeatCircusGrid);
+            // start the grid tracking logic
+            gridWindow = new GridWindow(data);
+            Grid grid = gridWindow.DynamicGrid;
 
-            data.SelectedBars.Add(WhisperingRockBar);
-            data.SelectedBars.Add(BasicBrainingBar);
-            data.SelectedBars.Add(ShootingGalleryBar);
-            data.SelectedBars.Add(DancePartyBar);
-            data.SelectedBars.Add(BrainTumblerBar);
-            data.SelectedBars.Add(LungfishopolisBar);
-            data.SelectedBars.Add(FordBar);
-            data.SelectedBars.Add(ThorneyTowersBar);
-            data.SelectedBars.Add(MilkmanConspiracyBar);
-            data.SelectedBars.Add(GloriasTheaterBar);
-            data.SelectedBars.Add(WaterlooWorldBar);
-            data.SelectedBars.Add(BlackVelvetopiaBar);
-            data.SelectedBars.Add(MeatCircusBar);
 
-            //data.Reports.Add(Report1);
-            //data.Reports.Add(Report2);
-            //data.Reports.Add(Report3);
-            //data.Reports.Add(Report4);
-            //data.Reports.Add(Report5);
-            //data.Reports.Add(Report6);
-            //data.Reports.Add(Report7);
-            //data.Reports.Add(Report8);
-            //data.Reports.Add(Report9);
-            //data.Reports.Add(Report10);
-            //data.Reports.Add(Report11);
-            //data.Reports.Add(Report12);
-            //data.Reports.Add(Report13);
-
-            //data.ReportAttemptVisual.Add(Report1Attempts);
-            //data.ReportAttemptVisual.Add(Report2Attempts);
-            //data.ReportAttemptVisual.Add(Report3Attempts);
-            //data.ReportAttemptVisual.Add(Report4Attempts);
-            //data.ReportAttemptVisual.Add(Report5Attempts);
-            //data.ReportAttemptVisual.Add(Report6Attempts);
-            //data.ReportAttemptVisual.Add(Report7Attempts);
-            //data.ReportAttemptVisual.Add(Report8Attempts);
-            //data.ReportAttemptVisual.Add(Report9Attempts);
-            //data.ReportAttemptVisual.Add(Report10Attempts);
-            //data.ReportAttemptVisual.Add(Report11Attempts);
-            //data.ReportAttemptVisual.Add(Report12Attempts);
-            //data.ReportAttemptVisual.Add(Report13Attempts);
-
-            //data.TornPages.Add(TornPage1);
-            //data.TornPages.Add(TornPage2);
-            //data.TornPages.Add(TornPage3);
-            //data.TornPages.Add(TornPage4);
-            //data.TornPages.Add(TornPage5);
-
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\QuestionMark.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Zero.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\One.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Two.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Three.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Four.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Five.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Six.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Seven.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Eight.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Nine.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Ten.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Eleven.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Twelve.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Thirteen.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Fourteen.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Fifteen.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Sixteen.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Seventeen.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Eighteen.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Nineteen.png", UriKind.Relative)));
-            //data.Numbers.Add(new BitmapImage(new Uri("Images\\Twenty.png", UriKind.Relative)));
         }
 
         //private void InitOptions()
-        //{
-        //    PromiseCharmOption.IsChecked = Properties.Settings.Default.PromiseCharm;
-        //    HandleItemToggle(PromiseCharmOption, PromiseCharm, true);
-
-        //    ReportsOption.IsChecked = Properties.Settings.Default.AnsemReports;
-        //    for (int i = 0; i < data.Reports.Count; ++i)
-        //    {
-        //        HandleItemToggle(ReportsOption, data.Reports[i], true);
-        //    }
-
-        //    AbilitiesOption.IsChecked = Properties.Settings.Default.Abilities;
-        //    HandleItemToggle(AbilitiesOption, OnceMore, true);
-        //    HandleItemToggle(AbilitiesOption, SecondChance, true);
-
-        //    TornPagesOption.IsChecked = Properties.Settings.Default.TornPages;
-        //    for (int i = 0; i < data.TornPages.Count; ++i)
-        //    {
-        //        HandleItemToggle(TornPagesOption, data.TornPages[i], true);
-        //    }
-
-        //    CureOption.IsChecked = Properties.Settings.Default.Cure;
-        //    HandleItemToggle(CureOption, Cure1, true);
-        //    HandleItemToggle(CureOption, Cure2, true);
-        //    HandleItemToggle(CureOption, Cure3, true);
-
-        //    FinalFormOption.IsChecked = Properties.Settings.Default.FinalForm;
-        //    HandleItemToggle(FinalFormOption, Final, true);
-
-        //    SimpleOption.IsChecked = Properties.Settings.Default.Simple;
-        //    SimpleToggle(null, null);
-
-        //    SoraHeartOption.IsChecked = Properties.Settings.Default.SoraHeart;
-        //    SoraHeartToggle(null, null);
-        //    SimulatedOption.IsChecked = Properties.Settings.Default.Simulated;
-        //    SimulatedToggle(null, null);
-        //    HundredAcreWoodOption.IsChecked = Properties.Settings.Default.HundredAcre;
-        //    HundredAcreWoodToggle(null, null);
-        //    AtlanticaOption.IsChecked = Properties.Settings.Default.Atlantica;
-        //    AtlanticaToggle(null, null);
-
-        //    Top = Properties.Settings.Default.WindowY;
-        //    Left = Properties.Settings.Default.WindowX;
-        //}
-
 
         /// 
         /// Input Handling
