@@ -40,46 +40,46 @@ namespace PsyTrackerApp
         public static int Real_Candle = 0;
 
         // ghost versions for itempool counts
-        public static int Ghost_Marksmanship = 0;
-        public static int Ghost_Levitation = 0;
-        public static int Ghost_Shield = 0;
-        public static int Ghost_TK = 0;
-        public static int Ghost_Pyro = 0;
-        public static int Ghost_Clairvoyance = 0;
-        public static int Ghost_Invisibilty = 0;
-        public static int Ghost_Confusion = 0;
-        public static int Ghost_DuffelbagTag = 0;
-        public static int Ghost_Duffelbag = 0;
-        public static int Ghost_HatboxTag = 0;
-        public static int Ghost_Hatbox = 0;
-        public static int Ghost_PurseTag = 0;
-        public static int Ghost_Purse = 0;
-        public static int Ghost_SteamertrunkTag = 0;
-        public static int Ghost_Steamertrunk = 0;
-        public static int Ghost_SuitcaseTag = 0;
-        public static int Ghost_Suitcase = 0;
-        public static int Ghost_Candle = 0;
+        // public static int Ghost_Marksmanship = 0;
+        // public static int Ghost_Levitation = 0;
+        // public static int Ghost_Shield = 0;
+        // public static int Ghost_TK = 0;
+        // public static int Ghost_Pyro = 0;
+        // public static int Ghost_Clairvoyance = 0;
+        // public static int Ghost_Invisibilty = 0;
+        // public static int Ghost_Confusion = 0;
+        // public static int Ghost_DuffelbagTag = 0;
+        // public static int Ghost_Duffelbag = 0;
+        // public static int Ghost_HatboxTag = 0;
+        // public static int Ghost_Hatbox = 0;
+        // public static int Ghost_PurseTag = 0;
+        // public static int Ghost_Purse = 0;
+        // public static int Ghost_SteamertrunkTag = 0;
+        // public static int Ghost_Steamertrunk = 0;
+        // public static int Ghost_SuitcaseTag = 0;
+        // public static int Ghost_Suitcase = 0;
+        // public static int Ghost_Candle = 0;
 
         //amount of obtained ghost items
-        public static int Ghost_Marksmanship_obtained = 0;
-        public static int Ghost_Levitation_obtained = 0;
-        public static int Ghost_Shield_obtained = 0;
-        public static int Ghost_TK_obtained = 0;
-        public static int Ghost_Pyro_obtained = 0;
-        public static int Ghost_Clairvoyance_obtained = 0;
-        public static int Ghost_Invisibilty_obtained = 0;
-        public static int Ghost_Confusion_obtained = 0;
-        public static int Ghost_DuffelbagTag_obtained = 0;
-        public static int Ghost_Duffelbag_obtained = 0;
-        public static int Ghost_HatboxTag_obtained = 0;
-        public static int Ghost_Hatbox_obtained = 0;
-        public static int Ghost_PurseTag_obtained = 0;
-        public static int Ghost_Purse_obtained = 0;
-        public static int Ghost_SteamertrunkTag_obtained = 0;
-        public static int Ghost_Steamertrunk_obtained = 0;
-        public static int Ghost_SuitcaseTag_obtained = 0;
-        public static int Ghost_Suitcase_obtained = 0;
-        public static int Ghost_Candle_obtained = 0;
+        // public static int Ghost_Marksmanship_obtained = 0;
+        // public static int Ghost_Levitation_obtained = 0;
+        // public static int Ghost_Shield_obtained = 0;
+        // public static int Ghost_TK_obtained = 0;
+        // public static int Ghost_Pyro_obtained = 0;
+        // public static int Ghost_Clairvoyance_obtained = 0;
+        // public static int Ghost_Invisibilty_obtained = 0;
+        // public static int Ghost_Confusion_obtained = 0;
+        // public static int Ghost_DuffelbagTag_obtained = 0;
+        // public static int Ghost_Duffelbag_obtained = 0;
+        // public static int Ghost_HatboxTag_obtained = 0;
+        // public static int Ghost_Hatbox_obtained = 0;
+        // public static int Ghost_PurseTag_obtained = 0;
+        // public static int Ghost_Purse_obtained = 0;
+        // public static int Ghost_SteamertrunkTag_obtained = 0;
+        // public static int Ghost_Steamertrunk_obtained = 0;
+        // public static int Ghost_SuitcaseTag_obtained = 0;
+        // public static int Ghost_Suitcase_obtained = 0;
+        // public static int Ghost_Candle_obtained = 0;
 
         public static double universalOpacity = 0.5;
 
@@ -88,7 +88,7 @@ namespace PsyTrackerApp
             InitializeComponent();
         }
 
-        public void HandleWorldGrid(Item button, bool add)
+        public void Handle_WorldGrid(Item button, bool add)
         {
             Data data = MainWindow.data;
             int addRemove = 1;
@@ -125,7 +125,7 @@ namespace PsyTrackerApp
                 addRemove = -1;
             }
 
-            UpdateGhostObtained(button, addRemove);
+            //UpdateGhostObtained(button, addRemove);
             UpdateMulti(button, add);
 
             int gridremainder = 0;
@@ -179,20 +179,10 @@ namespace PsyTrackerApp
             //Reset any obtained item to be normal transparency
             item.Opacity = 1.0;
 
-            // update collection count
-            window.SetCollected(true);
-
             // update mouse actions
-            if (MainWindow.data.dragDrop)
-            {
-                item.MouseDoubleClick -= item.Item_Click;
-                item.MouseMove -= item.Item_MouseMove;
-            }
-            else
-            {
-                item.MouseDown -= item.Item_MouseDown;
-                item.MouseUp -= item.Item_MouseUp;
-            }
+            item.MouseDoubleClick -= item.Item_Click;
+            item.MouseMove -= item.Item_MouseMove;
+            
             item.MouseDown -= item.Item_Return;
             item.MouseDown += item.Item_Return;
         }
@@ -507,19 +497,16 @@ namespace PsyTrackerApp
         {
             Data data = MainWindow.data;
             string type = Codes.FindItemType(nameButton);
-            if (type != "Unknown")
-            {
-                return nameButton.StartsWith("Ghost_") && !window.GhostMathOption.IsChecked ? 0 : data.PointsDatanew[type];
-            }
+
             return 0;
 
-            //else if (MainWindow.data.PointsDatanew.Keys.Contains(type))
+            
         }
 
         private void Handle_Shadows(Item item, bool add)
         {
             //don't hide shadows for the multi items
-            if (Codes.FindItemType(item.Name) == "magic" || Codes.FindItemType(item.Name) == "page" || item.Name.StartsWith("Munny") || item.Name.StartsWith("Ghost_"))
+            if (Codes.FindItemType(item.Name) == "badge" || Codes.FindItemType(item.Name) == "baggage" || item.Name.StartsWith("Candle") || item.Name.StartsWith("Ghost_"))
             {
                 return;
             }
