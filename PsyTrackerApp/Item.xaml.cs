@@ -81,7 +81,7 @@ namespace PsyTrackerApp
         public void Item_Click(object sender, RoutedEventArgs e)
         {
             Data data = MainWindow.data;
-            if (data.selected != null && data.WorldsData[data.selected.Name].worldGrid.ReportHandler(this))
+            if (data.selected != null)
             {
                 data.WorldsData[data.selected.Name].worldGrid.Add_Item(this);
             }
