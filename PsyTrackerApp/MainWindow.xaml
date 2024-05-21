@@ -619,8 +619,7 @@
             </Grid>
             
             <!-- Items -->
-            <Grid Name="ItemPoolGrid"
-                  Grid.Row="3">
+            <Grid x:Name="ItemPool" Grid.Row="3">
                 <Grid.RowDefinitions>
                     <RowDefinition Name="MeritBadgeRow" />
                     <RowDefinition Name="EmotionalBaggageRow" />
@@ -696,47 +695,40 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                     </Grid.ColumnDefinitions>
-                    <local:Item x:Name="DuffleBagTag"
-                                Grid.Column="0">
+                    <local:Item x:Name="DuffleBagTag" Grid.Column="0">
                         <DynamicResource ResourceKey="DufflebagTagImage" />
                     </local:Item>
-                    <local:Item x:Name="DuffleBag"
-                                Grid.Column="1">
+                    <local:Item x:Name="DuffleBag" Grid.Column="1">
                         <DynamicResource ResourceKey="DufflebagImage" />
                     </local:Item>
-                    <local:Item x:Name="HatboxTag"
-                                Grid.Column="2">
+                    <local:Item x:Name="HatboxTag" Grid.Column="2">
                         <DynamicResource ResourceKey="HatboxTagImage" />
                     </local:Item>
-                    <local:Item x:Name="Hatbox"
-                                Grid.Column="3">
+                    <local:Item x:Name="Hatbox" Grid.Column="3">
                         <DynamicResource ResourceKey="HatboxImage" />
                     </local:Item>
-                    <local:Item x:Name="PurseTag"
-                                Grid.Column="4">
+                    <local:Item x:Name="PurseTag" Grid.Column="4">
                         <DynamicResource ResourceKey="PurseTagImage" />
                     </local:Item>
-                    <local:Item x:Name="Purse"
-                                Grid.Column="5">
+                    <local:Item x:Name="Purse" Grid.Column="5">
                         <DynamicResource ResourceKey="PurseImage" />
                     </local:Item>
-                    <local:Item x:Name="SteamertrunkTag"
-                                Grid.Column="6">
+                    <local:Item x:Name="SteamertrunkTag" Grid.Column="6">
                         <DynamicResource ResourceKey="SteamerTrunkTagImage" />
                     </local:Item>
-                    <local:Item x:Name="Steamertrunk"
-                                Grid.Column="7">
+                    <local:Item x:Name="Steamertrunk" Grid.Column="7">
                         <DynamicResource ResourceKey="SteamertrunkImage" />
                     </local:Item>
-                    <local:Item x:Name="SuitcaseTag"
-                                Grid.Column="8">
+                    <local:Item x:Name="SuitcaseTag" Grid.Column="8">
                         <DynamicResource ResourceKey="SuitcaseTagImage" />
                     </local:Item>
-                    <local:Item x:Name="Suitcase"
-                                Grid.Column="9">
+                    <local:Item x:Name="Suitcase" Grid.Column="9">
                         <DynamicResource ResourceKey="SuitcaseImage" />
                     </local:Item>
                 </Grid>
+                
+                
+                
                 <!-- Mental World Items -->
                 <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
